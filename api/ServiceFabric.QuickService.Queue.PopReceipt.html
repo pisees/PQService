@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct PopReceipt
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct PopReceipt
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L20" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_QuickService_Queue_PopReceipt" data-uid="ServiceFabric.QuickService.Queue.PopReceipt">Struct PopReceipt
+              </h1>
+              <div class="markdown level0 summary"><p>PopReceipt value type.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:ServiceFabric.QuickService.Queue</h6>
+              <h6><strong>Assembly</strong>:QueueClient.dll</h6>
+              <h5 id="ServiceFabric_QuickService_Queue_PopReceipt_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public struct PopReceipt : IFormattable, IEquatable&lt;PopReceipt&gt;, IComparable&lt;PopReceipt&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt__ctor_System_Int64_Guid_UInt64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.%23ctor(System.Int64%2CGuid%2CUInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L133">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt__ctor_System_Int64_Guid_UInt64_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.#ctor(System.Int64,Guid,UInt64)">PopReceipt(Int64, Guid, UInt64)</h4>
+              <div class="markdown level1 summary"><p>Creates a PopReceipt based on the constituent fields.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PopReceipt(long partition, Guid id, UInt64 tag = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Partition number.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Guid</span></td>
+                    <td><em>id</em></td>
+                    <td><p>Unique identifier for this PopReceipt.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">UInt64</span></td>
+                    <td><em>tag</em></td>
+                    <td><p>Tag for concurrency control. Default is zero.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_Empty.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L28">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_Empty" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.Empty">Empty</h4>
+              <div class="markdown level1 summary"><p>Gets the empty PopReceipt.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly PopReceipt Empty</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_Id.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L74">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_Id" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.Id">Id</h4>
+              <div class="markdown level1 summary"><p>Unique identifier of the PopReceipt.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly Guid Id</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Guid</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_Partition.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.Partition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L80">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_Partition" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.Partition">Partition</h4>
+              <div class="markdown level1 summary"><p>UInt64 value containing the partition of the PopReceipt.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly long Partition</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_Tag.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L86">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_Tag" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.Tag">Tag</h4>
+              <div class="markdown level1 summary"><p>UInt64 tag value used to control concurrency.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly UInt64 Tag</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_CompareTo_ServiceFabric_QuickService_Queue_PopReceipt_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.CompareTo(ServiceFabric.QuickService.Queue.PopReceipt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L310">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_CompareTo_ServiceFabric_QuickService_Queue_PopReceipt_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.CompareTo(ServiceFabric.QuickService.Queue.PopReceipt)">CompareTo(PopReceipt)</h4>
+              <div class="markdown level1 summary"><p>Compares a PopReceipt this value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int CompareTo(PopReceipt other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>other</em></td>
+                    <td><p>PopReceipt to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>1, -1 or 0.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.CompareTo(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L280">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_CompareTo_System_Object_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.CompareTo(System.Object)">CompareTo(Object)</h4>
+              <div class="markdown level1 summary"><p>Compares an object this value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int CompareTo(object other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>other</em></td>
+                    <td><p>Object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>1, -1 or 0.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_Equals_System_Object_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L207">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_Equals_System_Object_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.Equals(System.Object)">Equals(Object)</h4>
+              <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>obj</em></td>
+                    <td><p>Instance to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_GetHashCode.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L226">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_GetHashCode" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>A hash code for the current object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_NewPopReceipt_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.NewPopReceipt(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L152">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_NewPopReceipt_System_Int64_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.NewPopReceipt(System.Int64)">NewPopReceipt(Int64)</h4>
+              <div class="markdown level1 summary"><p>Creates a new PopReceipt in the specified partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static PopReceipt NewPopReceipt(long partition)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Long integer representing the partition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><p>PopReceipt instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_ToByteArray.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.ToByteArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L162">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_ToByteArray" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.ToByteArray">ToByteArray()</h4>
+              <div class="markdown level1 summary"><p>Gets the PopReceipt as an array of bytes.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public byte[] ToByteArray()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><p>byte[].</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_ToString.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L235">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_ToString" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>A string that represents the current object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_ToString_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.ToString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L246">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_ToString_System_String_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.ToString(System.String)">ToString(String)</h4>
+              <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>format</em></td>
+                    <td><p>Format specifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>A string that represents the current object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Queue_PopReceipt_ToString_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Supports two format specifiers, &quot;G&quot; for upper case letters and &quot;g&quot; for lower case letters.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_ToString_System_String_IFormatProvider_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.ToString(System.String%2CIFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L258">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_ToString_System_String_IFormatProvider_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.ToString(System.String,IFormatProvider)">ToString(String, IFormatProvider)</h4>
+              <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>format</em></td>
+                    <td><p>Format specifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><em>formatProvider</em></td>
+                    <td><p>Format provider instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>A string that represents the current object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Queue_PopReceipt_ToString_System_String_IFormatProvider__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Supports two format specifiers, &quot;G&quot; for upper case letters and &quot;g&quot; for lower case letters.</p>
+</div>
+              <h3 id="operators">Operators
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_op_Equality_ServiceFabric_QuickService_Queue_PopReceipt_ServiceFabric_QuickService_Queue_PopReceipt_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.op_Equality(ServiceFabric.QuickService.Queue.PopReceipt%2CServiceFabric.QuickService.Queue.PopReceipt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L355">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_op_Equality_ServiceFabric_QuickService_Queue_PopReceipt_ServiceFabric_QuickService_Queue_PopReceipt_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.op_Equality(ServiceFabric.QuickService.Queue.PopReceipt,ServiceFabric.QuickService.Queue.PopReceipt)">Equality(PopReceipt, PopReceipt)</h4>
+              <div class="markdown level1 summary"><p>Equals operator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(PopReceipt s1, PopReceipt s2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>s1</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>s2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if equal, otherwise False.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_op_Equality_ServiceFabric_QuickService_Queue_PopReceipt_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.op_Equality(ServiceFabric.QuickService.Queue.PopReceipt%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L373">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_op_Equality_ServiceFabric_QuickService_Queue_PopReceipt_System_String_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.op_Equality(ServiceFabric.QuickService.Queue.PopReceipt,System.String)">Equality(PopReceipt, String)</h4>
+              <div class="markdown level1 summary"><p>Equals operator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(PopReceipt s1, string s2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>s1</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>s2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if equal, otherwise False.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_op_Equality_System_String_ServiceFabric_QuickService_Queue_PopReceipt_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.op_Equality(System.String%2CServiceFabric.QuickService.Queue.PopReceipt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L364">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_op_Equality_System_String_ServiceFabric_QuickService_Queue_PopReceipt_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.op_Equality(System.String,ServiceFabric.QuickService.Queue.PopReceipt)">Equality(String, PopReceipt)</h4>
+              <div class="markdown level1 summary"><p>Equals operator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(string s1, PopReceipt s2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>s1</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>s2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if equal, otherwise False.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_op_Inequality_ServiceFabric_QuickService_Queue_PopReceipt_ServiceFabric_QuickService_Queue_PopReceipt_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.op_Inequality(ServiceFabric.QuickService.Queue.PopReceipt%2CServiceFabric.QuickService.Queue.PopReceipt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L328">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_op_Inequality_ServiceFabric_QuickService_Queue_PopReceipt_ServiceFabric_QuickService_Queue_PopReceipt_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.op_Inequality(ServiceFabric.QuickService.Queue.PopReceipt,ServiceFabric.QuickService.Queue.PopReceipt)">Inequality(PopReceipt, PopReceipt)</h4>
+              <div class="markdown level1 summary"><p>Not equals operator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(PopReceipt p1, PopReceipt p2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>p1</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>p2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>False if equal, otherwise True.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_op_Inequality_ServiceFabric_QuickService_Queue_PopReceipt_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.op_Inequality(ServiceFabric.QuickService.Queue.PopReceipt%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L346">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_op_Inequality_ServiceFabric_QuickService_Queue_PopReceipt_System_String_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.op_Inequality(ServiceFabric.QuickService.Queue.PopReceipt,System.String)">Inequality(PopReceipt, String)</h4>
+              <div class="markdown level1 summary"><p>Not equals operator </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(PopReceipt s1, string s2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>s1</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>s2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>False if equal, otherwise True.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Queue_PopReceipt_op_Inequality_System_String_ServiceFabric_QuickService_Queue_PopReceipt_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Queue.PopReceipt.op_Inequality(System.String%2CServiceFabric.QuickService.Queue.PopReceipt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueClient/PopReceipt.cs/#L337">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Queue_PopReceipt_op_Inequality_System_String_ServiceFabric_QuickService_Queue_PopReceipt_" data-uid="ServiceFabric.QuickService.Queue.PopReceipt.op_Inequality(System.String,ServiceFabric.QuickService.Queue.PopReceipt)">Inequality(String, PopReceipt)</h4>
+              <div class="markdown level1 summary"><p>Not equals operator </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(string s1, PopReceipt s2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>s1</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Queue.PopReceipt.html#ServiceFabric_QuickService_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>s2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>False if equal, otherwise True.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

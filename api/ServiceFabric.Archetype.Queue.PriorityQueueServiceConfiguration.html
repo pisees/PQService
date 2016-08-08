@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PriorityQueueServiceConfiguration
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PriorityQueueServiceConfiguration
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L19" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration">Class PriorityQueueServiceConfiguration
+              </h1>
+              <div class="markdown level0 summary"><p>PriorityQueueService configuration class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">PriorityQueueServiceConfiguration</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:ServiceFabric.Archetype.Queue</h6>
+              <h6><strong>Assembly</strong>:PriorityQueueService.dll</h6>
+              <h5 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonObject(MemberSerialization = MemberSerialization.OptOut)]
+public class PriorityQueueServiceConfiguration : IQueueServiceConfiguration</code></pre>
+              </div>
+              <h5 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>The ConfigurationProvider class uses Json.NET to serialize the class internally. All of the properties should be exposed as read only properties,
+requiring public getter, but private setters. This class is used by the QueuePartitionOperation and GenericInt64StatefulService classes via the interfaces
+below. THe class must be marked using the JsonObjectAttribute and each property must be marked with the JsonPropertyAttribute. Any non standard types
+must use a JsonConverter like the TimeSpan based properties below.</p>
+</div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_CapacityErrorPercent.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.CapacityErrorPercent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L55">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_CapacityErrorPercent" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.CapacityErrorPercent">CapacityErrorPercent</h4>
+              <div class="markdown level1 summary"><p>Percent of capacity where a health error will be raised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double CapacityErrorPercent { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_CapacityErrorPercent">CapacityErrorPercent</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_CapacityWarningPercent.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.CapacityWarningPercent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L49">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_CapacityWarningPercent" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.CapacityWarningPercent">CapacityWarningPercent</h4>
+              <div class="markdown level1 summary"><p>Percent of capacity where a health warning will be raised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double CapacityWarningPercent { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_CapacityWarningPercent">CapacityWarningPercent</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_ExpiredItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.ExpiredItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L140">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_ExpiredItemsHealthReportTitle" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.ExpiredItemsHealthReportTitle">ExpiredItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for expired items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string ExpiredItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_ExpiredItemsHealthReportTitle">ExpiredItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_FabricOperationTimeout.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.FabricOperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L92">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_FabricOperationTimeout" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.FabricOperationTimeout">FabricOperationTimeout</h4>
+              <div class="markdown level1 summary"><p>Operation timeout for fabric operations in seconds.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan FabricOperationTimeout { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_FabricOperationTimeout">FabricOperationTimeout</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_HealthCheckInterval.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.HealthCheckInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L113">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_HealthCheckInterval" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.HealthCheckInterval">HealthCheckInterval</h4>
+              <div class="markdown level1 summary"><p>Time interval delay before health checks begin.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan HealthCheckInterval { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_HealthCheckInterval">HealthCheckInterval</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_HealthCheckStartDelay.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.HealthCheckStartDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L106">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_HealthCheckStartDelay" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.HealthCheckStartDelay">HealthCheckStartDelay</h4>
+              <div class="markdown level1 summary"><p>Time interval between health checks.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan HealthCheckStartDelay { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_HealthCheckStartDelay">HealthCheckStartDelay</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_ItemExpiration.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.ItemExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L99">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_ItemExpiration" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.ItemExpiration">ItemExpiration</h4>
+              <div class="markdown level1 summary"><p>Duration for a single item to expire.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan ItemExpiration { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_ItemExpiration">ItemExpiration</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_ItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.ItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L152">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_ItemsHealthReportTitle" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.ItemsHealthReportTitle">ItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for all items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string ItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_ItemsHealthReportTitle">ItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseCheckInterval.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseCheckInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L127">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseCheckInterval" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseCheckInterval">LeaseCheckInterval</h4>
+              <div class="markdown level1 summary"><p>Time interval between checks for lease expiration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan LeaseCheckInterval { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_LeaseCheckInterval">LeaseCheckInterval</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseCheckStartDelay.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseCheckStartDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L120">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseCheckStartDelay" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseCheckStartDelay">LeaseCheckStartDelay</h4>
+              <div class="markdown level1 summary"><p>Time interval between health checks.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan LeaseCheckStartDelay { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_LeaseCheckStartDelay">LeaseCheckStartDelay</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeasedItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeasedItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L134">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeasedItemsHealthReportTitle" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeasedItemsHealthReportTitle">LeasedItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for leased items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string LeasedItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_LeasedItemsHealthReportTitle">LeasedItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseDuration.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L85">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseDuration" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseDuration">LeaseDuration</h4>
+              <div class="markdown level1 summary"><p>Lease item percent of queue capacity before error.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan LeaseDuration { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_LeaseDuration">LeaseDuration</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseItemPercentError.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseItemPercentError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L79">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseItemPercentError" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseItemPercentError">LeaseItemPercentError</h4>
+              <div class="markdown level1 summary"><p>Lease item percent of queue capacity before error.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double LeaseItemPercentError { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_LeaseItemPercentError">LeaseItemPercentError</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseItemPercentWarning.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseItemPercentWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L73">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_LeaseItemPercentWarning" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.LeaseItemPercentWarning">LeaseItemPercentWarning</h4>
+              <div class="markdown level1 summary"><p>Lease item percent of queue capacity before warning.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double LeaseItemPercentWarning { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_LeaseItemPercentWarning">LeaseItemPercentWarning</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaxExpiredCapacityPerPartition.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaxExpiredCapacityPerPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L43">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaxExpiredCapacityPerPartition" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaxExpiredCapacityPerPartition">MaxExpiredCapacityPerPartition</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that may be in error or expired within a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int MaxExpiredCapacityPerPartition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_MaxExpiredCapacityPerPartition">MaxExpiredCapacityPerPartition</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaximumDequeueCount.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaximumDequeueCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L61">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaximumDequeueCount" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaximumDequeueCount">MaximumDequeueCount</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that can be dequeued at once.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int MaximumDequeueCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_MaximumDequeueCount">MaximumDequeueCount</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaxLeaseCapacityPerPartition.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaxLeaseCapacityPerPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L38">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaxLeaseCapacityPerPartition" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaxLeaseCapacityPerPartition">MaxLeaseCapacityPerPartition</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that may be leased within a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int MaxLeaseCapacityPerPartition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_MaxLeaseCapacityPerPartition">MaxLeaseCapacityPerPartition</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaxQueueCapacityPerPartition.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaxQueueCapacityPerPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L33">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_MaxQueueCapacityPerPartition" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.MaxQueueCapacityPerPartition">MaxQueueCapacityPerPartition</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that may be held within a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int MaxQueueCapacityPerPartition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_MaxQueueCapacityPerPartition">MaxQueueCapacityPerPartition</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_NumberOfQueues.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.NumberOfQueues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L67">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_NumberOfQueues" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.NumberOfQueues">NumberOfQueues</h4>
+              <div class="markdown level1 summary"><p>Number of priorities for this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int NumberOfQueues { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_NumberOfQueues">NumberOfQueues</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_QueuedItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.QueuedItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L146">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_QueuedItemsHealthReportTitle" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.QueuedItemsHealthReportTitle">QueuedItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for queued items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string QueuedItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_QueuedItemsHealthReportTitle">QueuedItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_QueueLengthLoadReportTitle.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.QueueLengthLoadReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L164">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_QueueLengthLoadReportTitle" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.QueueLengthLoadReportTitle">QueueLengthLoadReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the load report for queue length.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string QueueLengthLoadReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_QueueLengthLoadReportTitle">QueueLengthLoadReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_RequestsPerSecondLoadReportTitle.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.RequestsPerSecondLoadReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L158">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_PriorityQueueServiceConfiguration_RequestsPerSecondLoadReportTitle" data-uid="ServiceFabric.Archetype.Queue.PriorityQueueServiceConfiguration.RequestsPerSecondLoadReportTitle">RequestsPerSecondLoadReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the load report for RPS.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string RequestsPerSecondLoadReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueServiceConfiguration.html#ServiceFabric_Archetype_Queue_IQueueServiceConfiguration_RequestsPerSecondLoadReportTitle">RequestsPerSecondLoadReportTitle</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

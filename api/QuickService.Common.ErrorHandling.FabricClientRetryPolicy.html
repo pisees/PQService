@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FabricClientRetryPolicy
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FabricClientRetryPolicy
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L16" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy">Class FabricClientRetryPolicy
+              </h1>
+              <div class="markdown level0 summary"><p>A policy to retry an operation which has no return value (basically an Action)</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">FabricClientRetryPolicy</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:QuickService.Common.ErrorHandling</h6>
+              <h6><strong>Assembly</strong>:QuickService.Common.dll</h6>
+              <h5 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class FabricClientRetryPolicy</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy__ctor_System_Fabric_FabricClientSettings_System_Int32_QuickService_Common_ErrorHandling_WaitingPolicy_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_System_Boolean_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.%23ctor(System.Fabric.FabricClientSettings%2CSystem.Int32%2CQuickService.Common.ErrorHandling.WaitingPolicy%2CQuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L68">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy__ctor_System_Fabric_FabricClientSettings_System_Int32_QuickService_Common_ErrorHandling_WaitingPolicy_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_System_Boolean_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.#ctor(System.Fabric.FabricClientSettings,System.Int32,QuickService.Common.ErrorHandling.WaitingPolicy,QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy,System.Boolean)">FabricClientRetryPolicy(FabricClientSettings, Int32, WaitingPolicy, ITransientErrorDetectionStrategy, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.html#QuickService_Common_ErrorHandling_FabricClientRetryPolicy">FabricClientRetryPolicy</a> type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public FabricClientRetryPolicy(FabricClientSettings settings, int maxAttempts, WaitingPolicy waitingPolicy, ITransientErrorDetectionStrategy defaultErrorDetectionStrategy, bool useFastRetriesForTesting = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.FabricClientSettings</span></td>
+                    <td><em>settings</em></td>
+                    <td><p><span class="xref">FabricClientSettings</span> instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>maxAttempts</em></td>
+                    <td><p>The maximum number of times an operation should be retried, must be positive.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.WaitingPolicy.html#QuickService_Common_ErrorHandling_WaitingPolicy">WaitingPolicy</a></td>
+                    <td><em>waitingPolicy</em></td>
+                    <td><p>The waiting policy to use, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td><em>defaultErrorDetectionStrategy</em></td>
+                    <td><p>The default error detection strategy to use, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>useFastRetriesForTesting</em></td>
+                    <td><p>A flag indicating if we should use fast retries for testing, default is False</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If some of the non-nullable arguments are null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>If the <em>maxAttempts</em> argument is not positive.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy__ctor_System_Fabric_SecurityCredentials_System_String___System_Int32_QuickService_Common_ErrorHandling_WaitingPolicy_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_System_Boolean_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.%23ctor(System.Fabric.SecurityCredentials%2CSystem.String%5B%5D%2CSystem.Int32%2CQuickService.Common.ErrorHandling.WaitingPolicy%2CQuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L96">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy__ctor_System_Fabric_SecurityCredentials_System_String___System_Int32_QuickService_Common_ErrorHandling_WaitingPolicy_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_System_Boolean_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.#ctor(System.Fabric.SecurityCredentials,System.String[],System.Int32,QuickService.Common.ErrorHandling.WaitingPolicy,QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy,System.Boolean)">FabricClientRetryPolicy(SecurityCredentials, String[], Int32, WaitingPolicy, ITransientErrorDetectionStrategy, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.html#QuickService_Common_ErrorHandling_FabricClientRetryPolicy">FabricClientRetryPolicy</a> type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public FabricClientRetryPolicy(SecurityCredentials credentials, string[] hostEndpoints, int maxAttempts, WaitingPolicy waitingPolicy, ITransientErrorDetectionStrategy defaultErrorDetectionStrategy, bool useFastRetriesForTesting = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.SecurityCredentials</span></td>
+                    <td><em>credentials</em></td>
+                    <td><p><span class="xref">SecurityCredentials</span> to use when connecting to the endpoint.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>hostEndpoints</em></td>
+                    <td><p>Defines the set of Gateway addresses the <span class="xref">FabricClient</span> can use to connect to the cluster.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>maxAttempts</em></td>
+                    <td><p>The maximum number of times an operation should be retried, must be positive.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.WaitingPolicy.html#QuickService_Common_ErrorHandling_WaitingPolicy">WaitingPolicy</a></td>
+                    <td><em>waitingPolicy</em></td>
+                    <td><p>The waiting policy to use, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td><em>defaultErrorDetectionStrategy</em></td>
+                    <td><p>The default error detection strategy to use, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>useFastRetriesForTesting</em></td>
+                    <td><p>A flag indicating if we should use fast retries for testing, default is False</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If some of the non-nullable arguments are null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>If the <em>maxAttempts</em> argument is not positive.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy__ctor_System_Int32_QuickService_Common_ErrorHandling_WaitingPolicy_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_System_Boolean_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.%23ctor(System.Int32%2CQuickService.Common.ErrorHandling.WaitingPolicy%2CQuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L43">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy__ctor_System_Int32_QuickService_Common_ErrorHandling_WaitingPolicy_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_System_Boolean_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.#ctor(System.Int32,QuickService.Common.ErrorHandling.WaitingPolicy,QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy,System.Boolean)">FabricClientRetryPolicy(Int32, WaitingPolicy, ITransientErrorDetectionStrategy, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.html#QuickService_Common_ErrorHandling_FabricClientRetryPolicy">FabricClientRetryPolicy</a> type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public FabricClientRetryPolicy(int maxAttempts, WaitingPolicy waitingPolicy, ITransientErrorDetectionStrategy defaultErrorDetectionStrategy, bool useFastRetriesForTesting = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>maxAttempts</em></td>
+                    <td><p>The maximum number of times an operation should be retried, must be positive.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.WaitingPolicy.html#QuickService_Common_ErrorHandling_WaitingPolicy">WaitingPolicy</a></td>
+                    <td><em>waitingPolicy</em></td>
+                    <td><p>The waiting policy to use, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td><em>defaultErrorDetectionStrategy</em></td>
+                    <td><p>The default error detection strategy to use, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>useFastRetriesForTesting</em></td>
+                    <td><p>A flag indicating if we should use fast retries for testing, default is False</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If some of the non-nullable arguments are null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>If the <em>maxAttempts</em> argument is not positive.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_DefaultErrorDetectionStrategy.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.DefaultErrorDetectionStrategy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L147">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_DefaultErrorDetectionStrategy" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.DefaultErrorDetectionStrategy">DefaultErrorDetectionStrategy</h4>
+              <div class="markdown level1 summary"><p>Gets the default error detection strategy.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly ITransientErrorDetectionStrategy DefaultErrorDetectionStrategy</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_DefaultFixed.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.DefaultFixed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L28">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_DefaultFixed" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.DefaultFixed">DefaultFixed</h4>
+              <div class="markdown level1 summary"><p>The default retry policy using the <a class="xref" href="QuickService.Common.ErrorHandling.FixedWaitingPolicy.html#QuickService_Common_ErrorHandling_FixedWaitingPolicy">FixedWaitingPolicy</a> and detecting all exceptions as transient errors (except OperationCanceledException). Uses local FabricClient.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly FabricClientRetryPolicy DefaultFixed</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.html#QuickService_Common_ErrorHandling_FabricClientRetryPolicy">FabricClientRetryPolicy</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_DefaultMaxAttempts.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.DefaultMaxAttempts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L23">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_DefaultMaxAttempts" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.DefaultMaxAttempts">DefaultMaxAttempts</h4>
+              <div class="markdown level1 summary"><p>The default value for maximum number of times an operation should be retried</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int DefaultMaxAttempts</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_MaxAttempts.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.MaxAttempts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L137">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_MaxAttempts" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.MaxAttempts">MaxAttempts</h4>
+              <div class="markdown level1 summary"><p>Gets the maximum number of times an operation should be attempted.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly int MaxAttempts</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_UseFastRetriesForTesting.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.UseFastRetriesForTesting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L152">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_UseFastRetriesForTesting" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.UseFastRetriesForTesting">UseFastRetriesForTesting</h4>
+              <div class="markdown level1 summary"><p>Gets a flag indicating if we should use fast retries for testing.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly bool UseFastRetriesForTesting</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_WaitingPolicy.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.WaitingPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L142">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_WaitingPolicy" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.WaitingPolicy">WaitingPolicy</h4>
+              <div class="markdown level1 summary"><p>Gets the maximum number of times an operation should be attempted.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly WaitingPolicy WaitingPolicy</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.WaitingPolicy.html#QuickService_Common_ErrorHandling_WaitingPolicy">WaitingPolicy</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_Client.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L157">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_Client" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.Client">Client</h4>
+              <div class="markdown level1 summary"><p>FabricClient instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public FabricClient Client { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.FabricClient</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_ExecuteWithRetries_System_Action_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_QuickService_Common_ErrorHandling_IRetryNotificationPolicy_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.ExecuteWithRetries(System.Action%2CQuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy%2CQuickService.Common.ErrorHandling.IRetryNotificationPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L197">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_ExecuteWithRetries_System_Action_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_QuickService_Common_ErrorHandling_IRetryNotificationPolicy_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.ExecuteWithRetries(System.Action,QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy,QuickService.Common.ErrorHandling.IRetryNotificationPolicy)">ExecuteWithRetries(Action, ITransientErrorDetectionStrategy, IRetryNotificationPolicy)</h4>
+              <div class="markdown level1 summary"><p>Executes an operation with retries.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ExecuteWithRetries(Action operationToAttempt, ITransientErrorDetectionStrategy errorDetectionStrategy = null, IRetryNotificationPolicy notificationPolicy = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Action</span></td>
+                    <td><em>operationToAttempt</em></td>
+                    <td><p>The operation, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td><em>errorDetectionStrategy</em></td>
+                    <td><p>The error detection strategy to use instead of the default one.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.IRetryNotificationPolicy.html#QuickService_Common_ErrorHandling_IRetryNotificationPolicy">IRetryNotificationPolicy</a></td>
+                    <td><em>notificationPolicy</em></td>
+                    <td><p>The notification policy to use.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If some of the non-nullable arguments are null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><p>Any exception thrown by the <em>operationToAttempt</em> after all the attempts have been exhausted.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_ExecuteWithRetriesAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_TimeSpan_System_Threading_CancellationToken_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_QuickService_Common_ErrorHandling_IRetryNotificationPolicyAsync_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.ExecuteWithRetriesAsync(System.Func%7BSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.Task%7D%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken%2CQuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy%2CQuickService.Common.ErrorHandling.IRetryNotificationPolicyAsync)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L252">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_ExecuteWithRetriesAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_TimeSpan_System_Threading_CancellationToken_QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy_QuickService_Common_ErrorHandling_IRetryNotificationPolicyAsync_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.ExecuteWithRetriesAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.TimeSpan,System.Threading.CancellationToken,QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy,QuickService.Common.ErrorHandling.IRetryNotificationPolicyAsync)">ExecuteWithRetriesAsync(Func&lt;CancellationToken, Task&gt;, TimeSpan, CancellationToken, ITransientErrorDetectionStrategy, IRetryNotificationPolicyAsync)</h4>
+              <div class="markdown level1 summary"><p>Executes an async operation (action with no result) with retries.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task ExecuteWithRetriesAsync(Func&lt;CancellationToken, Task&gt; operationToAttempt, TimeSpan timeout = null, CancellationToken cancellationToken = null, ITransientErrorDetectionStrategy errorDetectionStrategy = null, IRetryNotificationPolicyAsync notificationPolicy = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.CancellationToken</span>, <span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+                    <td><em>operationToAttempt</em></td>
+                    <td><p>The operation, cannot be null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>Optional timeout for the operation for single retry iteration, can be TimeSpan.Zero or Timeout.Infinite which means no timeout</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional token to cancel the waiting policy, operation and notification.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#QuickService_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td><em>errorDetectionStrategy</em></td>
+                    <td><p>Optional error detection strategy to use instead of the default one.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.IRetryNotificationPolicyAsync.html#QuickService_Common_ErrorHandling_IRetryNotificationPolicyAsync">IRetryNotificationPolicyAsync</a></td>
+                    <td><em>notificationPolicy</em></td>
+                    <td><p>Optional notification policy to use.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td><p>The future for the result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>If some of the non-nullable arguments are null.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeoutException</span></td>
+                    <td><p>If the operation was timeout in all retries.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.OperationCanceledException</span></td>
+                    <td><p>If the operation was canceled.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><p>Any exception thrown by the <em>operationToAttempt</em> after all the attempts have been exhausted.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_IsNoTimeout_System_TimeSpan_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.IsNoTimeout(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L359">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_IsNoTimeout_System_TimeSpan_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.IsNoTimeout(System.TimeSpan)">IsNoTimeout(TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>Indicates if there is time on the timeout.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static bool IsNoTimeout(TimeSpan timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>TimeSpan containing the timeout duration.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if time is remaining, otherwise false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_IsTimeoutException_System_Exception_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.IsTimeoutException(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L348">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_IsTimeoutException_System_Exception_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.IsTimeoutException(System.Exception)">IsTimeoutException(Exception)</h4>
+              <div class="markdown level1 summary"><p>Indicates if this is a timeout exception.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected static bool IsTimeoutException(Exception ex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><em>ex</em></td>
+                    <td><p>Exception to evaluate.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if this is a timeout exception, otherwise false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_Common_ErrorHandling_FabricClientRetryPolicy_ShouldRetry_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20QuickService.Common.ErrorHandling.FabricClientRetryPolicy.ShouldRetry(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/QuickService.Common/ErrorHandling/FabricClientRetryPolicy.cs/#L337">View Source</a>
+              </span>
+              <h4 id="QuickService_Common_ErrorHandling_FabricClientRetryPolicy_ShouldRetry_System_Int32_System_Boolean_" data-uid="QuickService.Common.ErrorHandling.FabricClientRetryPolicy.ShouldRetry(System.Int32,System.Boolean)">ShouldRetry(Int32, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Indicates if a retry should be attempted or not.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected bool ShouldRetry(int attemptCount, bool isTransient)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>attemptCount</em></td>
+                    <td><p>Number of retries attempted.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>isTransient</em></td>
+                    <td><p>Indicates if this is transient or not.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if retry should be attempted, otherwise false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

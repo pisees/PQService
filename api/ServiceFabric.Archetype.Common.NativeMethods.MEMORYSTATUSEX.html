@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct NativeMethods.MEMORYSTATUSEX
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct NativeMethods.MEMORYSTATUSEX
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L36" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX">Struct NativeMethods.MEMORYSTATUSEX
+              </h1>
+              <div class="markdown level0 summary"><p>Contains information about the current state of both physical and virtual 
+memory, including extended memory. The GlobalMemoryStatusEx function stores 
+information in this structure.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.ValueType.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.ValueType.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.ValueType.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:ServiceFabric.Archetype.Common</h6>
+              <h6><strong>Assembly</strong>:ServiceFabric.Archetype.Common.dll</h6>
+              <h5 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[StructLayout(LayoutKind.Sequential)]
+public struct MEMORYSTATUSEX</code></pre>
+              </div>
+              <h5 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>MEMORYSTATUSEX reflects the state of memory at the time of the call. It also 
+reflects the size of the paging file at that time. The operating system can enlarge 
+the paging file up to the maximum size set by the administrator.</p>
+</div>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_dwLength.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.dwLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L40">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_dwLength" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.dwLength">dwLength</h4>
+              <div class="markdown level1 summary"><p>The size of the structure, in bytes. You must set this member before calling GlobalMemoryStatusEx.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public uint dwLength</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_dwMemoryLoad.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.dwMemoryLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L44">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_dwMemoryLoad" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.dwMemoryLoad">dwMemoryLoad</h4>
+              <div class="markdown level1 summary"><p>A number between 0 and 100 that specifies the approximate percentage 
+of physical memory that is in use (0 indicates no memory use and 100 
+indicates full memory use).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public uint dwMemoryLoad</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailExtendedVirtual.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailExtendedVirtual%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L72">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailExtendedVirtual" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailExtendedVirtual">ullAvailExtendedVirtual</h4>
+              <div class="markdown level1 summary"><p>Reserved. This value is always 0.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullAvailExtendedVirtual</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailPageFile.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailPageFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L60">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailPageFile" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailPageFile">ullAvailPageFile</h4>
+              <div class="markdown level1 summary"><p>The maximum amount of memory the current process can commit, in bytes. 
+This value is equal to or smaller than the system-wide available commit value. 
+To calculate the system-wide available commit value, call GetPerformanceInfo 
+and subtract the value of CommitTotal from the value of CommitLimit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullAvailPageFile</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailPhys.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailPhys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L51">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailPhys" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailPhys">ullAvailPhys</h4>
+              <div class="markdown level1 summary"><p>The amount of physical memory currently available, in bytes. This is the 
+amount of physical memory that can be immediately reused without having to write 
+its contents to disk first. It is the sum of the size of the standby, free, and 
+zero lists.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullAvailPhys</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailVirtual.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailVirtual%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L70">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullAvailVirtual" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullAvailVirtual">ullAvailVirtual</h4>
+              <div class="markdown level1 summary"><p>The amount of unreserved and uncommitted memory currently in the user-mode 
+portion of the virtual address space of the calling process, in bytes.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullAvailVirtual</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullTotalPageFile.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullTotalPageFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L55">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullTotalPageFile" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullTotalPageFile">ullTotalPageFile</h4>
+              <div class="markdown level1 summary"><p>The current committed memory limit for the system or the current process, 
+whichever is smaller, in bytes. To get the system-wide committed memory limit, 
+call GetPerformanceInfo.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullTotalPageFile</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullTotalPhys.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullTotalPhys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L46">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullTotalPhys" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullTotalPhys">ullTotalPhys</h4>
+              <div class="markdown level1 summary"><p>The amount of actual physical memory, in bytes.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullTotalPhys</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullTotalVirtual.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullTotalVirtual%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/NativeMethods.cs/#L67">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_NativeMethods_MEMORYSTATUSEX_ullTotalVirtual" data-uid="ServiceFabric.Archetype.Common.NativeMethods.MEMORYSTATUSEX.ullTotalVirtual">ullTotalVirtual</h4>
+              <div class="markdown level1 summary"><p>The size of the user-mode portion of the virtual address space of the 
+calling process, in bytes. This value depends on the type of process, the type 
+of processor, and the configuration of the operating system. For example, this 
+value is approximately 2 GB for most 32-bit processes on an x86 processor and 
+approximately 3 GB for 32-bit processes that are large address aware running 
+on a system with 4-gigabyte tuning enabled.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ullTotalVirtual</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

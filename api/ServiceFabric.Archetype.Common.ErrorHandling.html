@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace ServiceFabric.Archetype.Common.ErrorHandling
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace ServiceFabric.Archetype.Common.ErrorHandling
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_ErrorHandling.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.ErrorHandling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="ServiceFabric_Archetype_Common_ErrorHandling" data-uid="ServiceFabric.Archetype.Common.ErrorHandling">Namespace ServiceFabric.Archetype.Common.ErrorHandling
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes
+              </h3>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.AllErrorsTransientDetectionStrategy.html#ServiceFabric_Archetype_Common_ErrorHandling_AllErrorsTransientDetectionStrategy">AllErrorsTransientDetectionStrategy</a></h4>
+                  <section><p>The strategy that considers all errors as transient except from <span class="xref">System.OperationCanceledException</span>s.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.AllErrorsTransientDetectionStrategy%601.html#ServiceFabric_Archetype_Common_ErrorHandling_AllErrorsTransientDetectionStrategy_1">AllErrorsTransientDetectionStrategy&lt;TResult&gt;</a></h4>
+                  <section><p>The strategy that considers all errors as transient except from <span class="xref">System.OperationCanceledException</span>s and considers
+all returned values as a success.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.CircuitBreakerRetryPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_CircuitBreakerRetryPolicy">CircuitBreakerRetryPolicy</a></h4>
+                  <section><p>A policy to retry an operation which has no return value (basically an Action)</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.CircuitBreakerRetryPolicy%601.html#ServiceFabric_Archetype_Common_ErrorHandling_CircuitBreakerRetryPolicy_1">CircuitBreakerRetryPolicy&lt;TResult&gt;</a></h4>
+                  <section><p>A policy to retry an operation which has return value (basically a Function)</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.ExponentialBackoffWaitingPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_ExponentialBackoffWaitingPolicy">ExponentialBackoffWaitingPolicy</a></h4>
+                  <section><p>The exponential back-off waiting policy.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.FabricClientRetryPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_FabricClientRetryPolicy">FabricClientRetryPolicy</a></h4>
+                  <section><p>A policy to retry an operation which has no return value (basically an Action)</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.FabricTransientDetectionStrategy.html#ServiceFabric_Archetype_Common_ErrorHandling_FabricTransientDetectionStrategy">FabricTransientDetectionStrategy</a></h4>
+                  <section><p>The strategy that considers all errors as transient except from <span class="xref">System.OperationCanceledException</span>s.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.FabricTransientDetectionStrategy%601.html#ServiceFabric_Archetype_Common_ErrorHandling_FabricTransientDetectionStrategy_1">FabricTransientDetectionStrategy&lt;TResult&gt;</a></h4>
+                  <section><p>The strategy that considers all errors as transient except from <span class="xref">System.OperationCanceledException</span>s and considers
+all returned values as a success.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.FixedWaitingPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_FixedWaitingPolicy">FixedWaitingPolicy</a></h4>
+                  <section><p>The fixed time waiting policy.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.LinearWaitingPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_LinearWaitingPolicy">LinearWaitingPolicy</a></h4>
+                  <section><p>The linear interval waiting policy.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.RestApiErrorDetectionStrategy.html#ServiceFabric_Archetype_Common_ErrorHandling_RestApiErrorDetectionStrategy">RestApiErrorDetectionStrategy</a></h4>
+                  <section><p>The error detection strategy for Rest APIs.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.RetryPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_RetryPolicy">RetryPolicy</a></h4>
+                  <section><p>A policy to retry an operation which has no return value (basically an Action)</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.RetryPolicy%601.html#ServiceFabric_Archetype_Common_ErrorHandling_RetryPolicy_1">RetryPolicy&lt;TResult&gt;</a></h4>
+                  <section><p>A policy to retry an operation which has return value (basically a Function)</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.WaitingPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_WaitingPolicy">WaitingPolicy</a></h4>
+                  <section><p>Configures how the retry logic will behave in case of failures and,
+specifically, how much time it will wait between subsequent retries.</p>
+</section>
+                <h3 id="interfaces">Interfaces
+              </h3>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.IRetryNotificationPolicy.html#ServiceFabric_Archetype_Common_ErrorHandling_IRetryNotificationPolicy">IRetryNotificationPolicy</a></h4>
+                  <section><p>Configures how to notify the caller when retry happen on a call without result</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.IRetryNotificationPolicy%601.html#ServiceFabric_Archetype_Common_ErrorHandling_IRetryNotificationPolicy_1">IRetryNotificationPolicy&lt;TResult&gt;</a></h4>
+                  <section><p>Configures how to notify the caller when retry happen on a call with result</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.IRetryNotificationPolicyAsync.html#ServiceFabric_Archetype_Common_ErrorHandling_IRetryNotificationPolicyAsync">IRetryNotificationPolicyAsync</a></h4>
+                  <section><p>Configures how to notify the caller when retry happen on a call without result</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.IRetryNotificationPolicyAsync%601.html#ServiceFabric_Archetype_Common_ErrorHandling_IRetryNotificationPolicyAsync_1">IRetryNotificationPolicyAsync&lt;TResult&gt;</a></h4>
+                  <section><p>Configures how to notify the caller when retry happen on a call with result</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.ITransientErrorDetectionStrategy.html#ServiceFabric_Archetype_Common_ErrorHandling_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></h4>
+                  <section><p>The interface of a strategy to detect transient errors for operations that do not return a value.</p>
+</section>
+                  <h4><a class="xref" href="ServiceFabric.Archetype.Common.ErrorHandling.ITransientErrorDetectionStrategy%601.html#ServiceFabric_Archetype_Common_ErrorHandling_ITransientErrorDetectionStrategy_1">ITransientErrorDetectionStrategy&lt;TResult&gt;</a></h4>
+                  <section><p>The interface of a strategy to detect transient errors for operations that return a value.</p>
+</section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IServiceEventSource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IServiceEventSource
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L14" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource">Interface IServiceEventSource
+              </h1>
+              <div class="markdown level0 summary"><p>Defines the minimum events to support logging and diagnostics.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:ServiceFabric.QuickService.Common.Diagnostics</h6>
+              <h6><strong>Assembly</strong>:ServiceFabric.Archetype.Common.dll</h6>
+              <h5 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IServiceEventSource</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_AbortInvoked_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.AbortInvoked(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L117">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_AbortInvoked_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.AbortInvoked(System.String,System.Guid,System.Int64)">AbortInvoked(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>OnAbort invoked event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void AbortInvoked(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ChangeRoleAsyncInvoked_System_String_System_Guid_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ChangeRoleAsyncInvoked(System.String%2CSystem.Guid%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L101">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ChangeRoleAsyncInvoked_System_String_System_Guid_System_Int64_System_String_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ChangeRoleAsyncInvoked(System.String,System.Guid,System.Int64,System.String)">ChangeRoleAsyncInvoked(String, Guid, Int64, String)</h4>
+              <div class="markdown level1 summary"><p>OnChangeRoleAsync invoked event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ChangeRoleAsyncInvoked(string serviceTypeName, Guid partition, long replicaOrInstance, string role)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>role</em></td>
+                    <td><p>Name of the new role.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_CloseAsyncInvoked_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.CloseAsyncInvoked(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L109">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_CloseAsyncInvoked_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.CloseAsyncInvoked(System.String,System.Guid,System.Int64)">CloseAsyncInvoked(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>OnCloseAsync invoked event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void CloseAsyncInvoked(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_CreateCommunicationListener_System_String_System_Guid_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.CreateCommunicationListener(System.String%2CSystem.Guid%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L68">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_CreateCommunicationListener_System_String_System_Guid_System_Int64_System_String_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.CreateCommunicationListener(System.String,System.Guid,System.Int64,System.String)">CreateCommunicationListener(String, Guid, Int64, String)</h4>
+              <div class="markdown level1 summary"><p>Create communication listener event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void CreateCommunicationListener(string serviceTypeName, Guid partition, long replicaOrInstance, string listenAddress)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>listenAddress</em></td>
+                    <td><p>String containing the uri where the communication listener is listening.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_OpenAsyncInvoked_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.OpenAsyncInvoked(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L92">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_OpenAsyncInvoked_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.OpenAsyncInvoked(System.String,System.Guid,System.Int64)">OpenAsyncInvoked(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>OnOpenAsync invoked event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void OpenAsyncInvoked(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_PotentialDataLoss_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.PotentialDataLoss(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L84">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_PotentialDataLoss_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.PotentialDataLoss(System.String,System.Guid,System.Int64)">PotentialDataLoss(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>Service partition may have experienced data loss.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void PotentialDataLoss(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_RunAsyncInvoked_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.RunAsyncInvoked(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L59">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_RunAsyncInvoked_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.RunAsyncInvoked(System.String,System.Guid,System.Int64)">RunAsyncInvoked(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>RunAsync invoked event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void RunAsyncInvoked(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceInstanceConstructed_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceInstanceConstructed(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L22">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceInstanceConstructed_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceInstanceConstructed(System.String,System.Guid,System.Int64)">ServiceInstanceConstructed(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>A service instance was started for the service type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ServiceInstanceConstructed(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServicePartitionConfigurationChanged_System_String_System_Guid_System_Int64_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServicePartitionConfigurationChanged(System.String%2CSystem.Guid%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L76">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServicePartitionConfigurationChanged_System_String_System_Guid_System_Int64_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServicePartitionConfigurationChanged(System.String,System.Guid,System.Int64)">ServicePartitionConfigurationChanged(String, Guid, Int64)</h4>
+              <div class="markdown level1 summary"><p>Service partition configuration changed event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ServicePartitionConfigurationChanged(string serviceTypeName, Guid partition, long replicaOrInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceRequestFailed_System_String_System_Guid_System_Int64_System_String_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceRequestFailed(System.String%2CSystem.Guid%2CSystem.Int64%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L51">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceRequestFailed_System_String_System_Guid_System_Int64_System_String_System_String_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceRequestFailed(System.String,System.Guid,System.Int64,System.String,System.String)">ServiceRequestFailed(String, Guid, Int64, String, String)</h4>
+              <div class="markdown level1 summary"><p>Service failure request event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ServiceRequestFailed(string serviceTypeName, Guid partition, long replicaOrInstance, string requestTypeName, string exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>requestTypeName</em></td>
+                    <td><p>Name of the request type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>exception</em></td>
+                    <td><p>Reason for the failure.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceRequestStart_System_String_System_Guid_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceRequestStart(System.String%2CSystem.Guid%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L31">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceRequestStart_System_String_System_Guid_System_Int64_System_String_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceRequestStart(System.String,System.Guid,System.Int64,System.String)">ServiceRequestStart(String, Guid, Int64, String)</h4>
+              <div class="markdown level1 summary"><p>Start request event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ServiceRequestStart(string serviceTypeName, Guid partition, long replicaOrInstance, string requestTypeName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>requestTypeName</em></td>
+                    <td><p>Name of the request type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceRequestStop_System_String_System_Guid_System_Int64_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceRequestStop(System.String%2CSystem.Guid%2CSystem.Int64%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Diagnostics/IServiceEventSource.cs/#L41">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Diagnostics_IServiceEventSource_ServiceRequestStop_System_String_System_Guid_System_Int64_System_String_System_Int32_" data-uid="ServiceFabric.QuickService.Common.Diagnostics.IServiceEventSource.ServiceRequestStop(System.String,System.Guid,System.Int64,System.String,System.Int32)">ServiceRequestStop(String, Guid, Int64, String, Int32)</h4>
+              <div class="markdown level1 summary"><p>Stop request event.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ServiceRequestStop(string serviceTypeName, Guid partition, long replicaOrInstance, string requestTypeName, int duration)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>serviceTypeName</em></td>
+                    <td><p>Name of the service type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Guid</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Guid representing the partition identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>replicaOrInstance</em></td>
+                    <td><p>Long integer value representing the replica or instance identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>requestTypeName</em></td>
+                    <td><p>Name of the request type.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>duration</em></td>
+                    <td><p>Duration of the call in milliseconds.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

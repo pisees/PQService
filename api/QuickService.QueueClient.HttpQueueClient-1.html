@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HttpQueueClient&lt;TItem&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HttpQueueClient&lt;TItem&gt;
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L32" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="QuickService_QueueClient_HttpQueueClient_1" data-uid="QuickService.QueueClient.HttpQueueClient`1">Class HttpQueueClient&lt;TItem&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Queue Client</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">HttpQueueClient&lt;TItem&gt;</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:QuickService.QueueClient</h6>
+              <h6><strong>Assembly</strong>:QuickService.QueueClient.dll</h6>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class HttpQueueClient&lt;TItem&gt; : IDisposable where TItem : IEquatable&lt;TItem&gt;</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TItem</em></td>
+                    <td>Type of the item being stored in the queue.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1__ctor_Uri_System_String_QuickService_Common_ErrorHandling_RetryPolicy_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.%23ctor(Uri%2CSystem.String%2CQuickService.Common.ErrorHandling.RetryPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L108">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1__ctor_Uri_System_String_QuickService_Common_ErrorHandling_RetryPolicy_" data-uid="QuickService.QueueClient.HttpQueueClient`1.#ctor(Uri,System.String,QuickService.Common.ErrorHandling.RetryPolicy)">HttpQueueClient(Uri, String, RetryPolicy)</h4>
+              <div class="markdown level1 summary"><p>QueueClient constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpQueueClient(Uri serviceUri, string listenerName = &quot;SvcEndpoint&quot;, RetryPolicy retryPolicy = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Uri</span></td>
+                    <td><em>serviceUri</em></td>
+                    <td><p>Uri of the service in the format fabric:/[app]/[svc].</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>listenerName</em></td>
+                    <td><p>String containing the name of the listener. Default to &#39;SvcEndpoint&#39;</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="QuickService.Common.ErrorHandling.RetryPolicy.html#QuickService_Common_ErrorHandling_RetryPolicy">RetryPolicy</a></td>
+                    <td><em>retryPolicy</em></td>
+                    <td><p>RetryPolocy instance. Defaults to <see name="RetryPolicy"></see>.DefaultFixed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1__ctor_Uri_System_String_QuickService_Common_ErrorHandling_RetryPolicy__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>There is quite a bit of overhead to creating an instance of QueueClient. Create one per service and reuse.</p>
+</div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_ServicePartitionCount.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.ServicePartitionCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L90">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_ServicePartitionCount" data-uid="QuickService.QueueClient.HttpQueueClient`1.ServicePartitionCount">ServicePartitionCount</h4>
+              <div class="markdown level1 summary"><p>Gets the number of partitions configured for this queue service.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ServicePartitionCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_CountAsync_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.CountAsync(System.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L304">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_CountAsync_System_Int32_CancellationToken_" data-uid="QuickService.QueueClient.HttpQueueClient`1.CountAsync(System.Int32,CancellationToken)">CountAsync(Int32, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Retrieves the number of items in the specified queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;long&gt; CountAsync(int queue = null, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>queue</em></td>
+                    <td><p>Integer value indicating the queue.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance used to cancel this operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><p>Long integer indicating the number of items in the specified queue or -1 if an error occurred.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_DeleteItemAsync_QuickService_QueueClient_PopReceipt_CancellationToken_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.DeleteItemAsync(QuickService.QueueClient.PopReceipt%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L560">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_DeleteItemAsync_QuickService_QueueClient_PopReceipt_CancellationToken_" data-uid="QuickService.QueueClient.HttpQueueClient`1.DeleteItemAsync(QuickService.QueueClient.PopReceipt,CancellationToken)">DeleteItemAsync(PopReceipt, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Delete an item from the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;QueueItem&lt;TItem&gt;&gt; DeleteItemAsync(PopReceipt key, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="QuickService.QueueClient.PopReceipt.html#QuickService_QueueClient_PopReceipt">PopReceipt</a></td>
+                    <td><em>key</em></td>
+                    <td><p>PopReceipt key.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<a class="xref" href="QuickService.QueueClient.QueueItem-1.html#QuickService_QueueClient_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;</td>
+                    <td><p>QueueItem&lt;TItem&gt; instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_DequeueAsync_System_Int32_System_Int32_System_Int32_CancellationToken_System_String_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.DequeueAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCancellationToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L353">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_DequeueAsync_System_Int32_System_Int32_System_Int32_CancellationToken_System_String_" data-uid="QuickService.QueueClient.HttpQueueClient`1.DequeueAsync(System.Int32,System.Int32,System.Int32,CancellationToken,System.String)">DequeueAsync(Int32, Int32, Int32, CancellationToken, String)</h4>
+              <div class="markdown level1 summary"><p>Removes and returns the top items from the specified queues.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;QueueItem&lt;TItem&gt;&gt;&gt; DequeueAsync(int count = 1, int startQueue = null, int endQueue = null, CancellationToken cancellationToken = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>count</em></td>
+                    <td><p>Number of items to retrieve. Default is 1.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>startQueue</em></td>
+                    <td><p>First queue to dequeue from. Default is 0.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>endQueue</em></td>
+                    <td><p>Last queue to dequeue from. Default is -1, which represents the last queue.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Activity identifier. If one is not provided a new one will be generated.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="QuickService.QueueClient.QueueItem-1.html#QuickService_QueueClient_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;&gt;</td>
+                    <td><p>List of QueueItem&lt;TItem&gt; instances.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_DequeueAsync_System_Int32_System_Int32_System_Int32_CancellationToken_System_String__seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="QuickService.QueueClient.QueueItem-1.html#QuickService_QueueClient_QueueItem_1">QueueItem</a>&lt;TItem&gt;</div>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_Dispose.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L687">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_Dispose" data-uid="QuickService.QueueClient.HttpQueueClient`1.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_Dispose_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>There is currently nothing to dispose, but in case a disposable resource is added later, client code will already be written correctly.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_EnqueueAsync_IEnumerable__0__System_Int32_TimeSpan_TimeSpan_CancellationToken_System_String_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.EnqueueAsync(IEnumerable%7B%600%7D%2CSystem.Int32%2CTimeSpan%2CTimeSpan%2CCancellationToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L403">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_EnqueueAsync_IEnumerable__0__System_Int32_TimeSpan_TimeSpan_CancellationToken_System_String_" data-uid="QuickService.QueueClient.HttpQueueClient`1.EnqueueAsync(IEnumerable{`0},System.Int32,TimeSpan,TimeSpan,CancellationToken,System.String)">EnqueueAsync(IEnumerable&lt;TItem&gt;, Int32, TimeSpan, TimeSpan, CancellationToken, String)</h4>
+              <div class="markdown level1 summary"><p>Enqueues a new item to the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;QueueItem&lt;TItem&gt;&gt;&gt; EnqueueAsync(IEnumerable&lt;TItem&gt; items, int queue = null, TimeSpan lease = null, TimeSpan expiration = null, CancellationToken cancellationToken = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;TItem&gt;</td>
+                    <td><em>items</em></td>
+                    <td><p>Items of type <em>TItem</em> to enqueue.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>queue</em></td>
+                    <td><p>Destination queue. Default is queue zero.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TimeSpan</span></td>
+                    <td><em>lease</em></td>
+                    <td><p>Duration after a dequeue operation when the items lease will expire.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TimeSpan</span></td>
+                    <td><em>expiration</em></td>
+                    <td><p>Duration after enqueue when the item expires and will not be processed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Activity identifier. If one is not provided a new one will be generated.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="QuickService.QueueClient.QueueItem-1.html#QuickService_QueueClient_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;&gt;</td>
+                    <td><p>List containing the enqueued QueueItem&lt;TItem&gt;.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_EnqueueAsync_IEnumerable__0__System_Int32_TimeSpan_TimeSpan_CancellationToken_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The list of QueueItem&lt;TItem&gt; are returned in case the querying of the status of an item is desired.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_ExtendLeaseAsync_IEnumerable_QuickService_QueueClient_PopReceipt__TimeSpan_CancellationToken_System_String_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.ExtendLeaseAsync(IEnumerable%7BQuickService.QueueClient.PopReceipt%7D%2CTimeSpan%2CCancellationToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L604">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_ExtendLeaseAsync_IEnumerable_QuickService_QueueClient_PopReceipt__TimeSpan_CancellationToken_System_String_" data-uid="QuickService.QueueClient.HttpQueueClient`1.ExtendLeaseAsync(IEnumerable{QuickService.QueueClient.PopReceipt},TimeSpan,CancellationToken,System.String)">ExtendLeaseAsync(IEnumerable&lt;PopReceipt&gt;, TimeSpan, CancellationToken, String)</h4>
+              <div class="markdown level1 summary"><p>Update the state of a set of leased items. The value of lease replaces the existing lease time.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;bool&gt;&gt; ExtendLeaseAsync(IEnumerable&lt;PopReceipt&gt; keys, TimeSpan lease, CancellationToken cancellationToken, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="QuickService.QueueClient.PopReceipt.html#QuickService_QueueClient_PopReceipt">PopReceipt</a>&gt;</td>
+                    <td><em>keys</em></td>
+                    <td><p>Array of item keys to update if present. All keys must belong to a single partition.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TimeSpan</span></td>
+                    <td><em>lease</em></td>
+                    <td><p>New lease duration from now. If TimeSpan.Zero is passed, the lease will be released.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Activity identifier. If one is not provided a new one will be generated.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><p>Boolean array of indicators of success or failure for each key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_ExtendLeaseAsync_IEnumerable_QuickService_QueueClient_PopReceipt__TimeSpan_CancellationToken_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the value of lease is zero or negative, the item will be removed from the leased items and not placed back into a queue. 
+If the value is positive, the lease will expire that time interval from now.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_GetItemsAsync_System_Int64_System_Int32_System_Int32_CancellationToken_System_String_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.GetItemsAsync(System.Int64%2CSystem.Int32%2CSystem.Int32%2CCancellationToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L472">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_GetItemsAsync_System_Int64_System_Int32_System_Int32_CancellationToken_System_String_" data-uid="QuickService.QueueClient.HttpQueueClient`1.GetItemsAsync(System.Int64,System.Int32,System.Int32,CancellationToken,System.String)">GetItemsAsync(Int64, Int32, Int32, CancellationToken, String)</h4>
+              <div class="markdown level1 summary"><p>Gets a list of items not removing them from the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;QueueItem&lt;TItem&gt;&gt;&gt; GetItemsAsync(long partition, int top = 1000, int skip = 0, CancellationToken cancellationToken = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>partition</em></td>
+                    <td><p>Partition to query.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>top</em></td>
+                    <td><p>Number of items to return.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>skip</em></td>
+                    <td><p>Number of items to skip before returning. This allows paging of items.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Activity identifier. If one is not provided a new one will be generated.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="QuickService.QueueClient.QueueItem-1.html#QuickService_QueueClient_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;&gt;</td>
+                    <td><p>List of QueueItem&lt;TItem&gt; items.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_GetItemsAsync_System_Int64_System_Int32_System_Int32_CancellationToken_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Returns the item regardless of being queued, leased or expired.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_PeekItemAsync_System_Int32_System_Int32_CancellationToken_System_String_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.PeekItemAsync(System.Int32%2CSystem.Int32%2CCancellationToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L517">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_PeekItemAsync_System_Int32_System_Int32_CancellationToken_System_String_" data-uid="QuickService.QueueClient.HttpQueueClient`1.PeekItemAsync(System.Int32,System.Int32,CancellationToken,System.String)">PeekItemAsync(Int32, Int32, CancellationToken, String)</h4>
+              <div class="markdown level1 summary"><p>Peeks at next item without removing it from the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;QueueItem&lt;TItem&gt;&gt; PeekItemAsync(int startQueue = null, int endQueue = null, CancellationToken cancellationToken = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>startQueue</em></td>
+                    <td><p>First queue to dequeue from. Default is 0.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>endQueue</em></td>
+                    <td><p>Last queue to dequeue from. Default is -1, which represents the last queue.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Activity identifier. If one is not provided a new one will be generated.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<a class="xref" href="QuickService.QueueClient.QueueItem-1.html#QuickService_QueueClient_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;</td>
+                    <td><p>QueueItem&lt;TItem&gt; instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="QuickService_QueueClient_HttpQueueClient_1_PeekItemAsync_System_Int32_System_Int32_CancellationToken_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the client is using multiple threads or there are multiple clients, it is likely that a different thread or client 
+will consume this item between when it is peeked and the next operation. Do not count on this item being there for the next operation.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_PriorityCountAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.PriorityCountAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L269">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_PriorityCountAsync_CancellationToken_" data-uid="QuickService.QueueClient.HttpQueueClient`1.PriorityCountAsync(CancellationToken)">PriorityCountAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Retrieves the number of queue priorities.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;int&gt; PriorityCountAsync(CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance used to cancel this operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td><p>Integer indicating the number priorities or -1 if an error occurred.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_QueueClient_HttpQueueClient_1_ReleaseLeaseAsync_IEnumerable_QuickService_QueueClient_PopReceipt__CancellationToken_.md&amp;value=---%0Auid%3A%20QuickService.QueueClient.HttpQueueClient%601.ReleaseLeaseAsync(IEnumerable%7BQuickService.QueueClient.PopReceipt%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueClient/HttpQueueClient.cs/#L652">View Source</a>
+              </span>
+              <h4 id="QuickService_QueueClient_HttpQueueClient_1_ReleaseLeaseAsync_IEnumerable_QuickService_QueueClient_PopReceipt__CancellationToken_" data-uid="QuickService.QueueClient.HttpQueueClient`1.ReleaseLeaseAsync(IEnumerable{QuickService.QueueClient.PopReceipt},CancellationToken)">ReleaseLeaseAsync(IEnumerable&lt;PopReceipt&gt;, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Releases the lease of a queue item and removes it from the list of leased items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;bool&gt;&gt; ReleaseLeaseAsync(IEnumerable&lt;PopReceipt&gt; keys, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="QuickService.QueueClient.PopReceipt.html#QuickService_QueueClient_PopReceipt">PopReceipt</a>&gt;</td>
+                    <td><em>keys</em></td>
+                    <td><p>Keys of the items to release.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><p>Boolean indicator of success or failure.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

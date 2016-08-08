@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StatefulOwinCommunicationListener&lt;TOperations&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StatefulOwinCommunicationListener&lt;TOperations&gt;
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L49" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1">Class StatefulOwinCommunicationListener&lt;TOperations&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>OwiniCommunicationListener class access HTTP based requests.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">StatefulOwinCommunicationListener&lt;TOperations&gt;</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:ServiceFabric.Archetype.Common.Rest</h6>
+              <h6><strong>Assembly</strong>:ServiceFabric.Archetype.Common.dll</h6>
+              <h5 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class StatefulOwinCommunicationListener&lt;TOperations&gt; : ICommunicationListener, IHttpControllerActivator where TOperations : class</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TOperations</em></td>
+                    <td>Type of the partition operations that can satisfy the requests to this controller.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1__ctor__0_System_Fabric_ServiceContext_ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601.%23ctor(%600%2CSystem.Fabric.ServiceContext%2CServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L93">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1__ctor__0_System_Fabric_ServiceContext_ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource_" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1.#ctor(`0,System.Fabric.ServiceContext,ServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource)">StatefulOwinCommunicationListener(TOperations, ServiceContext, IServiceEventSource)</h4>
+              <div class="markdown level1 summary"><p>OwinCommunicationListener constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public StatefulOwinCommunicationListener(TOperations instance, ServiceContext context, IServiceEventSource evtSrc)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TOperations</span></td>
+                    <td><em>instance</em></td>
+                    <td><p>Partition operation class instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ServiceContext</span></td>
+                    <td><em>context</em></td>
+                    <td><p>ServiceContext instance containing information about the service instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource.html#ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource">IServiceEventSource</a></td>
+                    <td><em>evtSrc</em></td>
+                    <td><p>IServiceEventSource to allow diagnostic logging from within this instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1__ctor_System_String__0_System_Fabric_ServiceContext_ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601.%23ctor(System.String%2C%600%2CSystem.Fabric.ServiceContext%2CServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L105">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1__ctor_System_String__0_System_Fabric_ServiceContext_ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource_" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1.#ctor(System.String,`0,System.Fabric.ServiceContext,ServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource)">StatefulOwinCommunicationListener(String, TOperations, ServiceContext, IServiceEventSource)</h4>
+              <div class="markdown level1 summary"><p>OwinCommunicationListener constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public StatefulOwinCommunicationListener(string appRoot, TOperations instance, ServiceContext context, IServiceEventSource evtSrc)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>appRoot</em></td>
+                    <td><p>String containing the application root name of the service. Defaults to the service type name if not specified.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TOperations</span></td>
+                    <td><em>instance</em></td>
+                    <td><p>Partition operation class instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ServiceContext</span></td>
+                    <td><em>context</em></td>
+                    <td><p>ServiceContext instance containing information about the service instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource.html#ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource">IServiceEventSource</a></td>
+                    <td><em>evtSrc</em></td>
+                    <td><p>IServiceEventSource to allow diagnostic logging from within this instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_Abort.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601.Abort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L120">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_Abort" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1.Abort">Abort()</h4>
+              <div class="markdown level1 summary"><p>Aborts the service communication.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Abort()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_CloseAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601.CloseAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L131">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_CloseAsync_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1.CloseAsync(System.Threading.CancellationToken)">CloseAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Closes the service communication.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task CloseAsync(CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync(System.Threading.CancellationToken)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_Create_System_Net_Http_HttpRequestMessage_System_Web_Http_Controllers_HttpControllerDescriptor_System_Type_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601.Create(System.Net.Http.HttpRequestMessage%2CSystem.Web.Http.Controllers.HttpControllerDescriptor%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L237">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_Create_System_Net_Http_HttpRequestMessage_System_Web_Http_Controllers_HttpControllerDescriptor_System_Type_" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1.Create(System.Net.Http.HttpRequestMessage,System.Web.Http.Controllers.HttpControllerDescriptor,System.Type)">Create(HttpRequestMessage, HttpControllerDescriptor, Type)</h4>
+              <div class="markdown level1 summary"><p>Called to activate an instance of HTTP controller in the WebAPI pipeline</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IHttpController Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+                    <td><em>request</em></td>
+                    <td><p>HTTP request that triggered</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Web.Http.Controllers.HttpControllerDescriptor</span></td>
+                    <td><em>controllerDescriptor</em></td>
+                    <td><p>Description of the controller that was selected</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>controllerType</em></td>
+                    <td><p>The type of the controller that was selected for this request</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Web.Http.Controllers.IHttpController</span></td>
+                    <td><p>An instance of the selected HTTP controller</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.Web.Http.Dispatcher.IHttpControllerActivator.Create(System.Net.Http.HttpRequestMessage, System.Web.Http.Controllers.HttpControllerDescriptor, System.Type)</span></div>
+              <h5 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_Create_System_Net_Http_HttpRequestMessage_System_Web_Http_Controllers_HttpControllerDescriptor_System_Type__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This is a cheap way to avoid a framework such as Unity. If already using Unity, that is a better approach.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_OpenAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener%601.OpenAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/StatefulOwinCommunicationListener.cs/#L143">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_Rest_StatefulOwinCommunicationListener_1_OpenAsync_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.Rest.StatefulOwinCommunicationListener`1.OpenAsync(System.Threading.CancellationToken)">OpenAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Called to start communication with the service.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;string&gt; OpenAsync(CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><p>String containing the URI the service will be listening on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync(System.Threading.CancellationToken)</span></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

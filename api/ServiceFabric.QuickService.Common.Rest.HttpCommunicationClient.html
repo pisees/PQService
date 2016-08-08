@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HttpCommunicationClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HttpCommunicationClient
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L21" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient">Class HttpCommunicationClient
+              </h1>
+              <div class="markdown level0 summary"><p>Communication client that wraps the logic for communicating with a REST based service.
+Create by the <a class="xref" href="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClientFactory.html#ServiceFabric_QuickService_Common_Rest_HttpCommunicationClientFactory">HttpCommunicationClientFactory</a></p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">HttpCommunicationClient</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:ServiceFabric.QuickService.Common.Rest</h6>
+              <h6><strong>Assembly</strong>:ServiceFabric.Archetype.Common.dll</h6>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class HttpCommunicationClient : ICommunicationClient</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient__ctor_System_Uri_System_TimeSpan_System_TimeSpan_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.%23ctor(System.Uri%2CSystem.TimeSpan%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L65">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient__ctor_System_Uri_System_TimeSpan_System_TimeSpan_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.#ctor(System.Uri,System.TimeSpan,System.TimeSpan)">HttpCommunicationClient(Uri, TimeSpan, TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>HttpCommunicationClient constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpCommunicationClient(Uri baseAddress, TimeSpan operationTimeout, TimeSpan readWriteTimeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Uri</span></td>
+                    <td><em>baseAddress</em></td>
+                    <td><p>Uri containing the base address of the service.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>operationTimeout</em></td>
+                    <td><p>Time interval for the operation timeout.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>readWriteTimeout</em></td>
+                    <td><p>Time interval for the read/write timeout.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ActivityIdHeaderName.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ActivityIdHeaderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L52">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ActivityIdHeaderName" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ActivityIdHeaderName">ActivityIdHeaderName</h4>
+              <div class="markdown level1 summary"><p>String for the name of the activity identifier header.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string ActivityIdHeaderName</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_BaseAddress.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.BaseAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L31">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_BaseAddress" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.BaseAddress">BaseAddress</h4>
+              <div class="markdown level1 summary"><p>Service base address.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly Uri BaseAddress</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Uri</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_HttpMethodPatch.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.HttpMethodPatch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L47">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_HttpMethodPatch" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.HttpMethodPatch">HttpMethodPatch</h4>
+              <div class="markdown level1 summary"><p>HttpMethod.Patch is missing System.Net.Http.HttpMethod
+We will define one</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly HttpMethod HttpMethodPatch</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpMethod</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_JsonMediaType.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.JsonMediaType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L57">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_JsonMediaType" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.JsonMediaType">JsonMediaType</h4>
+              <div class="markdown level1 summary"><p>Content-Type: JSON (UTF8)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly string JsonMediaType</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_OperationTimeout.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.OperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L36">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_OperationTimeout" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.OperationTimeout">OperationTimeout</h4>
+              <div class="markdown level1 summary"><p>Represents the value for the operation timeout. Used for HttpWebRequest, GetResponse and GetRequestStream methods.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly TimeSpan OperationTimeout</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ReadWriteTimeout.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ReadWriteTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L41">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ReadWriteTimeout" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ReadWriteTimeout">ReadWriteTimeout</h4>
+              <div class="markdown level1 summary"><p>Represents the value for the timeout used to read/write from a stream.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly TimeSpan ReadWriteTimeout</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Endpoint.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L97">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Endpoint" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Endpoint">Endpoint</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the endpoint for this communication client type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ResolvedServiceEndpoint Endpoint { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ResolvedServiceEndpoint</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">Microsoft.ServiceFabric.Services.Communication.Client.ICommunicationClient.Endpoint</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ListenerName.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ListenerName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L92">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ListenerName" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ListenerName">ListenerName</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the listener name for this communication client type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string ListenerName { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">Microsoft.ServiceFabric.Services.Communication.Client.ICommunicationClient.ListenerName</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ResolvedServicePartition.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ResolvedServicePartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L87">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_ResolvedServicePartition" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.ResolvedServicePartition">ResolvedServicePartition</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the ResolvedServicePartition instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ResolvedServicePartition ResolvedServicePartition { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ResolvedServicePartition</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">Microsoft.ServiceFabric.Services.Communication.Client.ICommunicationClient.ResolvedServicePartition</span></div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Delete__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Delete%60%601(System.String%2C%60%600%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L214">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Delete__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Delete``1(System.String,``0,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String)">Delete&lt;T&gt;(String, T, String, AccessCondition, String)</h4>
+              <div class="markdown level1 summary"><p>DELETE request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpResponseMessage Delete&lt;T&gt;(string relativeUri, T item, string queryParams = null, AccessCondition accessCondition = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>item</em></td>
+                    <td><p>Item of type T to DELETE</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Delete__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the IfMatchETag value is &#39;*&#39; the item will be unconditionally overwritten. If the item doesn&#39;t exist, it will be added.
+Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_DeleteAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.DeleteAsync%60%601(System.String%2C%60%600%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L234">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_DeleteAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.DeleteAsync``1(System.String,``0,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String,System.TimeSpan,System.Threading.CancellationToken)">DeleteAsync&lt;T&gt;(String, T, String, AccessCondition, String, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>DELETE async request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; DeleteAsync&lt;T&gt;(string relativeUri, T item, string queryParams = null, AccessCondition accessCondition = null, string activityId = null, TimeSpan timeout = null, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>item</em></td>
+                    <td><p>Item of type T to DELETE</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>Optional timeout for the operation, the actual timeout will be minimum between provided timeout and defaultTimeout provided in the constructor</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional cancellationToken, can be CancellationToken.None</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_DeleteAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the IfMatchETag value is &#39;*&#39; the item will be unconditionally overwritten. If the item doesn&#39;t exist, it will be added.
+Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Get_System_String_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Get(System.String%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L110">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Get_System_String_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Get(System.String,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String)">Get(String, String, AccessCondition, String)</h4>
+              <div class="markdown level1 summary"><p>GET request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpResponseMessage Get(string relativeUri, string queryParams = null, AccessCondition accessCondition = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Get_System_String_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_GetAsync_System_String_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.GetAsync(System.String%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L126">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_GetAsync_System_String_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.GetAsync(System.String,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String,System.TimeSpan,System.Threading.CancellationToken)">GetAsync(String, String, AccessCondition, String, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>GET async request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(string relativeUri, string queryParams = null, AccessCondition accessCondition = null, string activityId = null, TimeSpan timeout = null, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>Optional timeout for the operation, the actual timeout will be minimum between provided timeout and defaultTimeout provided in the constructor</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional cancellationToken, can be CancellationToken.None</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_GetAsync_System_String_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Patch__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Patch%60%601(System.String%2C%60%600%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L252">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Patch__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Patch``1(System.String,``0,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String)">Patch&lt;T&gt;(String, T, String, AccessCondition, String)</h4>
+              <div class="markdown level1 summary"><p>PATCH request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpResponseMessage Patch&lt;T&gt;(string relativeUri, T item, string queryParams = null, AccessCondition accessCondition = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>item</em></td>
+                    <td><p>Item of type T to PATCH.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Patch__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the IfMatchETag value is &#39;*&#39; the item will be unconditionally overwritten. If the item doesn&#39;t exist, it will be added.
+Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PatchAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.PatchAsync%60%601(System.String%2C%60%600%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L272">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PatchAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.PatchAsync``1(System.String,``0,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String,System.TimeSpan,System.Threading.CancellationToken)">PatchAsync&lt;T&gt;(String, T, String, AccessCondition, String, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>PATCH async request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PatchAsync&lt;T&gt;(string relativeUri, T item, string queryParams = null, AccessCondition accessCondition = null, string activityId = null, TimeSpan timeout = null, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>item</em></td>
+                    <td><p>Item of type T to PATCH.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>Optional timeout for the operation, the actual timeout will be minimum between provided timeout and defaultTimeout provided in the constructor</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional cancellationToken, can be CancellationToken.None</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PatchAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the IfMatchETag value is &#39;*&#39; the item will be unconditionally overwritten. If the item doesn&#39;t exist, it will be added.
+Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Post__1_System_String___0___System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Post%60%601(System.String%2C%60%600%5B%5D%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L141">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Post__1_System_String___0___System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Post``1(System.String,``0[],System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String)">Post&lt;T&gt;(String, T[], String, AccessCondition, String)</h4>
+              <div class="markdown level1 summary"><p>POST request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpResponseMessage Post&lt;T&gt;(string relativeUri, T[] items, string queryParams = null, AccessCondition accessCondition = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td>T[]</td>
+                    <td><em>items</em></td>
+                    <td><p>Item of type T to POST.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Post__1_System_String___0___System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PostAsync__1_System_String_System_Collections_Generic_IEnumerable___0__System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.PostAsync%60%601(System.String%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L158">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PostAsync__1_System_String_System_Collections_Generic_IEnumerable___0__System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.PostAsync``1(System.String,System.Collections.Generic.IEnumerable{``0},System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String,System.TimeSpan,System.Threading.CancellationToken)">PostAsync&lt;T&gt;(String, IEnumerable&lt;T&gt;, String, AccessCondition, String, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>POST async request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PostAsync&lt;T&gt;(string relativeUri, IEnumerable&lt;T&gt; items, string queryParams = null, AccessCondition accessCondition = null, string activityId = null, TimeSpan timeout = null, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+                    <td><em>items</em></td>
+                    <td><p>Item of type T to POST.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>Optional timeout for the operation, the actual timeout will be minimum between provided timeout and defaultTimeout provided in the constructor</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional cancellationToken, can be CancellationToken.None</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PostAsync__1_System_String_System_Collections_Generic_IEnumerable___0__System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Put__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Put%60%601(System.String%2C%60%600%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L176">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Put__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.Put``1(System.String,``0,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String)">Put&lt;T&gt;(String, T, String, AccessCondition, String)</h4>
+              <div class="markdown level1 summary"><p>PUT request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public HttpResponseMessage Put&lt;T&gt;(string relativeUri, T item, string queryParams = null, AccessCondition accessCondition = null, string activityId = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>item</em></td>
+                    <td><p>Item of type T to PUT.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_Put__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the IfMatchETag value is &#39;*&#39; the item will be unconditionally overwritten. If the item doesn&#39;t exist, it will be added.
+Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PutAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.PutAsync%60%601(System.String%2C%60%600%2CSystem.String%2CServiceFabric.QuickService.Common.Rest.AccessCondition%2CSystem.String%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/Http/HttpCommunicationClient.cs/#L196">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PutAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.QuickService.Common.Rest.HttpCommunicationClient.PutAsync``1(System.String,``0,System.String,ServiceFabric.QuickService.Common.Rest.AccessCondition,System.String,System.TimeSpan,System.Threading.CancellationToken)">PutAsync&lt;T&gt;(String, T, String, AccessCondition, String, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>PUT async request</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PutAsync&lt;T&gt;(string relativeUri, T item, string queryParams = null, AccessCondition accessCondition = null, string activityId = null, TimeSpan timeout = null, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relativeUri</em></td>
+                    <td><p>Relative URI without first and last slash</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>item</em></td>
+                    <td><p>Item of type T to PUT.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>queryParams</em></td>
+                    <td><p>Optional query parameters, in the following format: param1=value2&amp;param2=value2</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.QuickService.Common.Rest.AccessCondition.html#ServiceFabric_QuickService_Common_Rest_AccessCondition">AccessCondition</a></td>
+                    <td><em>accessCondition</em></td>
+                    <td><p>Optional AccessCondition object that represents the condition that must be met in order for the request to proceed. If null, no condition is used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activityId</em></td>
+                    <td><p>Optional ActivityId instance representing a unique identifier for this call. If not empty or null, a header will be added to the HttpRequest.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>timeout</em></td>
+                    <td><p>Optional timeout for the operation, the actual timeout will be minimum between provided timeout and defaultTimeout provided in the constructor</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>Optional cancellationToken, can be CancellationToken.None</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+                    <td><p>HttpResponseMessage instance</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_QuickService_Common_Rest_HttpCommunicationClient_PutAsync__1_System_String___0_System_String_ServiceFabric_QuickService_Common_Rest_AccessCondition_System_String_System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the IfMatchETag value is &#39;*&#39; the item will be unconditionally overwritten. If the item doesn&#39;t exist, it will be added.
+Make sure you use Uri.EscapeDataString(value) in queryParams</p>
+</div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

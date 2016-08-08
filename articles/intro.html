@@ -10,11 +10,11 @@
     <meta name="title" content="Service Fabric .NET Priority Queue Service (0.9.0) ">
     <meta name="generator" content="docfx 2.2.2.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
   </head>
@@ -31,8 +31,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -54,10 +54,17 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <a href="https://github.com/toddabel/PQService/blob/master/docfx_project/index.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/toddabel/PQService/blob/master/docfx_project/articles/intro.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
               <h1 id="service-fabric-net-priority-queue-service-0-9-0">Service Fabric .NET Priority Queue Service (0.9.0)</h1>
               
 <p>The Service Fabric .NET Priority Queue Service allows you to build applications that have the need for a low latency, high scale priority queue. Out of the box, this example code provides a priority queue to which items can be enqueued and dequeued within a Service Fabric cluster.  </p>
@@ -65,7 +72,7 @@
 <p>The Priority Queue Service is a service for storing messages that can be stored and accessed quickly within a Service Fabric cluster. The queue can be configured to have any number of partitions, each partition can contain gigabytes of messages, constrained by the size of the node. A single message is a JSON message of any size and type, the message payload is opaque to the service. The queue service supports leasing of messages, message expiration, handles poison messages and has separate dead letter storage. This is not intended meet the needs of a pub-sub service, <a href="https://azure.microsoft.com/en-us/services/event-hubs/">Azure Event Hubs</a> is intended for that purpose.</p>
 <h2 id="topology">Topology</h2>
 <p>The Priority Queue Service can be deployed as part of your application within your Service Fabric Cluster. There are multiple topologies that can be supported, two are shown in the diagram below</p>
-<p><img src="images/queue-cluster-topology.png" alt="Topology"></p>
+<p><img src="../images/queue-cluster-topology.png" alt="Topology"></p>
 
             </article>
           </div>
@@ -92,9 +99,9 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

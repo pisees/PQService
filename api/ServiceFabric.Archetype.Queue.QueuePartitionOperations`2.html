@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QueuePartitionOperations&lt;TItem, TConfiguration&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QueuePartitionOperations&lt;TItem, TConfiguration&gt;
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L28" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2">Class QueuePartitionOperations&lt;TItem, TConfiguration&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Stateful queue service base class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">QueuePartitionOperations&lt;TItem, TConfiguration&gt;</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:ServiceFabric.Archetype.Queue</h6>
+              <h6><strong>Assembly</strong>:QueueService.dll</h6>
+              <h5 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sealed class QueuePartitionOperations&lt;TItem, TConfiguration&gt; : IQueueService&lt;TItem&gt;, IService, IService, IDisposable where TItem : IEquatable&lt;TItem&gt; where TConfiguration : class, IQueueServiceConfiguration, new ()</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TItem</em></td>
+                    <td>Type of the item contained by the queue.</td>
+                  </tr>
+                  <tr>
+                    <td><em>TConfiguration</em></td>
+                    <td>Type of the configuration structure.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2__ctor_ServiceFabric_Archetype_Common_GenericInt64PartitionService__1__ServiceFabric_Archetype_Queue_IQueueEventSource_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.%23ctor(ServiceFabric.Archetype.Common.GenericInt64PartitionService%7B%601%7D%2CServiceFabric.Archetype.Queue.IQueueEventSource%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L180">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2__ctor_ServiceFabric_Archetype_Common_GenericInt64PartitionService__1__ServiceFabric_Archetype_Queue_IQueueEventSource_System_Int32_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.#ctor(ServiceFabric.Archetype.Common.GenericInt64PartitionService{`1},ServiceFabric.Archetype.Queue.IQueueEventSource,System.Int32,System.Threading.CancellationToken)">QueuePartitionOperations(GenericInt64PartitionService&lt;TConfiguration&gt;, IQueueEventSource, Int32, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>QueueService constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public QueuePartitionOperations(GenericInt64PartitionService&lt;TConfiguration&gt; service, IQueueEventSource eventSource, int queues, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.html#ServiceFabric_Archetype_Common_GenericInt64PartitionService_1">GenericInt64PartitionService</a>&lt;TConfiguration&gt;</td>
+                    <td><em>service</em></td>
+                    <td><p>Service instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueEventSource.html#ServiceFabric_Archetype_Queue_IQueueEventSource">IQueueEventSource</a></td>
+                    <td><em>eventSource</em></td>
+                    <td><p>EventSource methods used by this base class.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>queues</em></td>
+                    <td><p>The number of queues to create.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2__ctor_ServiceFabric_Archetype_Common_GenericInt64PartitionService__1__ServiceFabric_Archetype_Queue_IQueueEventSource_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.%23ctor(ServiceFabric.Archetype.Common.GenericInt64PartitionService%7B%601%7D%2CServiceFabric.Archetype.Queue.IQueueEventSource%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L168">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2__ctor_ServiceFabric_Archetype_Common_GenericInt64PartitionService__1__ServiceFabric_Archetype_Queue_IQueueEventSource_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.#ctor(ServiceFabric.Archetype.Common.GenericInt64PartitionService{`1},ServiceFabric.Archetype.Queue.IQueueEventSource,System.Threading.CancellationToken)">QueuePartitionOperations(GenericInt64PartitionService&lt;TConfiguration&gt;, IQueueEventSource, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>QueueService constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public QueuePartitionOperations(GenericInt64PartitionService&lt;TConfiguration&gt; service, IQueueEventSource eventSource, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.html#ServiceFabric_Archetype_Common_GenericInt64PartitionService_1">GenericInt64PartitionService</a>&lt;TConfiguration&gt;</td>
+                    <td><em>service</em></td>
+                    <td><p>Service instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.IQueueEventSource.html#ServiceFabric_Archetype_Queue_IQueueEventSource">IQueueEventSource</a></td>
+                    <td><em>eventSource</em></td>
+                    <td><p>EventSource methods used by this base class.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_CountAsync.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.CountAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L766">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_CountAsync" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.CountAsync">CountAsync()</h4>
+              <div class="markdown level1 summary"><p>Gets the count from all of the queues in a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;long&gt; CountAsync()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><p>Long value containing the count.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_CountAsync_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The queue count does not included items that are leased or expired.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_CountAsync_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.CountAsync(ServiceFabric.Archetype.Queue.QueueType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L783">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_CountAsync_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.CountAsync(ServiceFabric.Archetype.Queue.QueueType,System.Threading.CancellationToken)">CountAsync(QueueType, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Gets the count from one of the collections.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;long&gt; CountAsync(QueueType queue, CancellationToken ct)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.QueueType.html#ServiceFabric_Archetype_Queue_QueueType">QueueType</a></td>
+                    <td><em>queue</em></td>
+                    <td><p>Integer indicating the queue to return the count for. 
+If QueueClient.AllQueues (-1) is specified, then the count for all queues will be returned.
+If QueueClient.LeaseQueue (-2) is specified, then the leased item count will be returned.
+If QueueClient.ExpiredQueue (-3) is specified, then the expired collection count will be returned.
+If QueueClient.ItemQueue (-4) is specified, then the list of all items queued, leased or expired will be returned.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>ct</em></td>
+                    <td><p>CancellationToken. Defaults to CancellationToken.None</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><p>Long value containing the count.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_CountAsync_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The queue count does not included items that are leased or expired.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_DeleteItemAsync_ServiceFabric_Archetype_Queue_PopReceipt_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.DeleteItemAsync(ServiceFabric.Archetype.Queue.PopReceipt%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L1173">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_DeleteItemAsync_ServiceFabric_Archetype_Queue_PopReceipt_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.DeleteItemAsync(ServiceFabric.Archetype.Queue.PopReceipt,System.Threading.CancellationToken)">DeleteItemAsync(PopReceipt, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Delete an item from the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;QueueItem&lt;TItem&gt;&gt; DeleteItemAsync(PopReceipt key, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.PopReceipt.html#ServiceFabric_Archetype_Queue_PopReceipt">PopReceipt</a></td>
+                    <td><em>key</em></td>
+                    <td><p>Array of PopReceipt keys.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.QueueItem%601.html#ServiceFabric_Archetype_Queue_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;</td>
+                    <td><p>List of QueueItem<titem> items.<p>
+</titem></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_DequeueAsync_System_Int32_ServiceFabric_Archetype_Queue_QueueType_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.DequeueAsync(System.Int32%2CServiceFabric.Archetype.Queue.QueueType%2CServiceFabric.Archetype.Queue.QueueType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L863">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_DequeueAsync_System_Int32_ServiceFabric_Archetype_Queue_QueueType_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.DequeueAsync(System.Int32,ServiceFabric.Archetype.Queue.QueueType,ServiceFabric.Archetype.Queue.QueueType,System.Threading.CancellationToken)">DequeueAsync(Int32, QueueType, QueueType, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Removes and returns the top items from the specified queues.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;QueueItem&lt;TItem&gt;&gt;&gt; DequeueAsync(int count, QueueType startQueue, QueueType endQueue, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>count</em></td>
+                    <td><p>Number of items to retrieve. Default is 1.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.QueueType.html#ServiceFabric_Archetype_Queue_QueueType">QueueType</a></td>
+                    <td><em>startQueue</em></td>
+                    <td><p>First queue to dequeue from. Default is 0.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.QueueType.html#ServiceFabric_Archetype_Queue_QueueType">QueueType</a></td>
+                    <td><em>endQueue</em></td>
+                    <td><p>Last queue to dequeue from. Default is -1, which represents the last queue.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.QueueItem%601.html#ServiceFabric_Archetype_Queue_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;&gt;</td>
+                    <td><p>List of QueueItem<titem> instances.<p>
+</titem></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_Dispose.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L1315">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_Dispose" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>This code added to correctly implement the disposable pattern. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              <h5 class="implements">Implements</h5>
+                  <div><span class="xref">System.IDisposable.Dispose()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_EnqueueAsync_System_Collections_Generic_IEnumerable__0__ServiceFabric_Archetype_Queue_QueueType_System_TimeSpan_System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.EnqueueAsync(System.Collections.Generic.IEnumerable%7B%600%7D%2CServiceFabric.Archetype.Queue.QueueType%2CSystem.TimeSpan%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L959">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_EnqueueAsync_System_Collections_Generic_IEnumerable__0__ServiceFabric_Archetype_Queue_QueueType_System_TimeSpan_System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.EnqueueAsync(System.Collections.Generic.IEnumerable{`0},ServiceFabric.Archetype.Queue.QueueType,System.TimeSpan,System.TimeSpan,System.Threading.CancellationToken)">EnqueueAsync(IEnumerable&lt;TItem&gt;, QueueType, TimeSpan, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Enqueues a new item to the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;QueueItem&lt;TItem&gt;&gt;&gt; EnqueueAsync(IEnumerable&lt;TItem&gt; itemsToEnqueue, QueueType queue, TimeSpan lease, TimeSpan expiration, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TItem&gt;</td>
+                    <td><em>itemsToEnqueue</em></td>
+                    <td><p>Item to enqueue encoded as a string.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.QueueType.html#ServiceFabric_Archetype_Queue_QueueType">QueueType</a></td>
+                    <td><em>queue</em></td>
+                    <td><p>Destination queue. Default is queue zero.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>lease</em></td>
+                    <td><p>Duration after a dequeue operation when the items lease will expire.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>expiration</em></td>
+                    <td><p>Duration after enqueue when the item expires and will not be processed.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.QueueItem%601.html#ServiceFabric_Archetype_Queue_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;&gt;</td>
+                    <td><p>List of QueueItem<titem> instances.<p>
+</titem></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_ExtendLeaseAsync_System_Collections_Generic_IEnumerable_ServiceFabric_Archetype_Queue_PopReceipt__System_TimeSpan_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.ExtendLeaseAsync(System.Collections.Generic.IEnumerable%7BServiceFabric.Archetype.Queue.PopReceipt%7D%2CSystem.TimeSpan%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L1234">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_ExtendLeaseAsync_System_Collections_Generic_IEnumerable_ServiceFabric_Archetype_Queue_PopReceipt__System_TimeSpan_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.ExtendLeaseAsync(System.Collections.Generic.IEnumerable{ServiceFabric.Archetype.Queue.PopReceipt},System.TimeSpan,System.Threading.CancellationToken)">ExtendLeaseAsync(IEnumerable&lt;PopReceipt&gt;, TimeSpan, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Update the state of a set of leased items. The value of lease replaces the existing lease time.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;bool&gt;&gt; ExtendLeaseAsync(IEnumerable&lt;PopReceipt&gt; keys, TimeSpan lease, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.PopReceipt.html#ServiceFabric_Archetype_Queue_PopReceipt">PopReceipt</a>&gt;</td>
+                    <td><em>keys</em></td>
+                    <td><p>Array of item keys to update if present.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>lease</em></td>
+                    <td><p>New lease duration from now. If TimeSpan.Zero is passed, the lease will be released.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><p>Boolean array of indicators of success or failure.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_ExtendLeaseAsync_System_Collections_Generic_IEnumerable_ServiceFabric_Archetype_Queue_PopReceipt__System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the value of lease is zero or negative, the item will be removed from the leased items and not placed back into a queue. 
+If the value is positive, the lease will expire that time interval from now.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_Finalize.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L209">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_Finalize" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.Finalize">Finalize()</h4>
+              <div class="markdown level1 summary"><p>QueuePartitionOperations destructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_GetItemsAsync_System_Int32_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.GetItemsAsync(System.Int32%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L1116">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_GetItemsAsync_System_Int32_System_Int32_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.GetItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">GetItemsAsync(Int32, Int32, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Gets the list of items in the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;QueueItem&lt;TItem&gt;&gt;&gt; GetItemsAsync(int top, int skip, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>top</em></td>
+                    <td><p>Integer value that sets the maximum number of items to be returned. Maximum allowed is 1000.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>skip</em></td>
+                    <td><p>Integer value that sets the number of items to skip before starting to return items.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.QueueItem%601.html#ServiceFabric_Archetype_Queue_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;&gt;</td>
+                    <td><p>List of QueueItem<titem> items.<p>
+</titem></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_PeekItemAsync_ServiceFabric_Archetype_Queue_QueueType_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.PeekItemAsync(ServiceFabric.Archetype.Queue.QueueType%2CServiceFabric.Archetype.Queue.QueueType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L1023">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_PeekItemAsync_ServiceFabric_Archetype_Queue_QueueType_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.PeekItemAsync(ServiceFabric.Archetype.Queue.QueueType,ServiceFabric.Archetype.Queue.QueueType,System.Threading.CancellationToken)">PeekItemAsync(QueueType, QueueType, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Peeks at the next item without removing it from the queue.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;QueueItem&lt;TItem&gt;&gt; PeekItemAsync(QueueType startQueue, QueueType endQueue, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.QueueType.html#ServiceFabric_Archetype_Queue_QueueType">QueueType</a></td>
+                    <td><em>startQueue</em></td>
+                    <td><p>First queue to dequeue from. Default is 0.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Queue.QueueType.html#ServiceFabric_Archetype_Queue_QueueType">QueueType</a></td>
+                    <td><em>endQueue</em></td>
+                    <td><p>Last queue to dequeue from. Default is -1, which represents the last queue.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.QueueItem%601.html#ServiceFabric_Archetype_Queue_QueueItem_1">QueueItem</a>&lt;TItem&gt;&gt;</td>
+                    <td><p>Returns the next QueueItem<titem> item to be returned.<p>
+</titem></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_PeekItemAsync_ServiceFabric_Archetype_Queue_QueueType_ServiceFabric_Archetype_Queue_QueueType_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The item is not guaranteed to be there when dequeuing, another client could have dequeued it.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_QueueCount.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.QueueCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L755">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_QueueCount" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.QueueCount">QueueCount()</h4>
+              <div class="markdown level1 summary"><p>Gets the number of queues the service is configured for.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int QueueCount()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>Integer value containing the number of queues.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_ReleaseLeaseAsync_System_Collections_Generic_IEnumerable_ServiceFabric_Archetype_Queue_PopReceipt__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Queue.QueuePartitionOperations%602.ReleaseLeaseAsync(System.Collections.Generic.IEnumerable%7BServiceFabric.Archetype.Queue.PopReceipt%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/QueueService/QueuePartitionOperations.cs/#L1283">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Queue_QueuePartitionOperations_2_ReleaseLeaseAsync_System_Collections_Generic_IEnumerable_ServiceFabric_Archetype_Queue_PopReceipt__System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Queue.QueuePartitionOperations`2.ReleaseLeaseAsync(System.Collections.Generic.IEnumerable{ServiceFabric.Archetype.Queue.PopReceipt},System.Threading.CancellationToken)">ReleaseLeaseAsync(IEnumerable&lt;PopReceipt&gt;, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Releases the lease of a queue item and removes it from the list of leased items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;bool&gt;&gt; ReleaseLeaseAsync(IEnumerable&lt;PopReceipt&gt; keys, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Queue.PopReceipt.html#ServiceFabric_Archetype_Queue_PopReceipt">PopReceipt</a>&gt;</td>
+                    <td><em>keys</em></td>
+                    <td><p>Keys of the items to release.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><p>Boolean indicator of success or failure.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

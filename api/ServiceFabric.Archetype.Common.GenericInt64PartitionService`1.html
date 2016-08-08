@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenericInt64PartitionService&lt;TConfiguration&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenericInt64PartitionService&lt;TConfiguration&gt;
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L56" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1">Class GenericInt64PartitionService&lt;TConfiguration&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Generic stateful service class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase</span></div>
+                  <div class="level2"><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulService</span></div>
+                  <div class="level3"><span class="xref">GenericInt64PartitionService&lt;TConfiguration&gt;</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulService.StateManager</span>
+                </div>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.GetAddresses()</span>
+                </div>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.CreateServiceReplicaListeners()</span>
+                </div>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.BackupAsync(Microsoft.ServiceFabric.Data.BackupDescription)</span>
+                </div>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.BackupAsync(Microsoft.ServiceFabric.Data.BackupDescription, System.TimeSpan, System.Threading.CancellationToken)</span>
+                </div>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.Context</span>
+                </div>
+                <div>
+                  <span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.Partition</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:ServiceFabric.Archetype.Common</h6>
+              <h6><strong>Assembly</strong>:ServiceFabric.Archetype.Common.dll</h6>
+              <h5 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class GenericInt64PartitionService&lt;TConfiguration&gt; : StatefulService, IStatefulUserServiceReplica where TConfiguration : class, new ()</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TConfiguration</em></td>
+                    <td>Type of the configuration class.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1__ctor_System_Fabric_StatefulServiceContext_ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.%23ctor(System.Fabric.StatefulServiceContext%2CServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L182">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1__ctor_System_Fabric_StatefulServiceContext_ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.#ctor(System.Fabric.StatefulServiceContext,ServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource)">GenericInt64PartitionService(StatefulServiceContext, IServiceEventSource)</h4>
+              <div class="markdown level1 summary"><p>QueueService constructor.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GenericInt64PartitionService(StatefulServiceContext context, IServiceEventSource eventSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.StatefulServiceContext</span></td>
+                    <td><em>context</em></td>
+                    <td><p>StatefulServiceContext instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.Diagnostics.IServiceEventSource.html#ServiceFabric_Archetype_Common_Diagnostics_IServiceEventSource">IServiceEventSource</a></td>
+                    <td><em>eventSource</em></td>
+                    <td><p>IStatefulServiceEventSource instance for diagnostic logging.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1__cpuCounter.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601._cpuCounter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L94">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1__cpuCounter" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1._cpuCounter">_cpuCounter</h4>
+              <div class="markdown level1 summary"><p>CPU performance counter instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected PerformanceCounter _cpuCounter</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Diagnostics.PerformanceCounter</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_Application.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.Application%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L139">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_Application" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.Application">Application</h4>
+              <div class="markdown level1 summary"><p>Name of the application.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly Uri Application</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Uri</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ConfigurationProvider.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ConfigurationProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L129">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ConfigurationProvider" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ConfigurationProvider">ConfigurationProvider</h4>
+              <div class="markdown level1 summary"><p>Configuration provider instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public readonly ConfigurationProvider&lt;TConfiguration&gt; ConfigurationProvider</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.Configuration.ConfigurationProvider%601.html#ServiceFabric_Archetype_Common_Configuration_ConfigurationProvider_1">ConfigurationProvider</a>&lt;TConfiguration&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_MemoryLoad.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.MemoryLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L84">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_MemoryLoad" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.MemoryLoad">MemoryLoad</h4>
+              <div class="markdown level1 summary"><p>Last memory load.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected uint MemoryLoad</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_MemoryLoadMax.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.MemoryLoadMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L89">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_MemoryLoadMax" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.MemoryLoadMax">MemoryLoadMax</h4>
+              <div class="markdown level1 summary"><p>Maximum memory load before wrtes are no olonger permitted.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected uint MemoryLoadMax</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ServiceFabricClient.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ServiceFabricClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L124">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ServiceFabricClient" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ServiceFabricClient">ServiceFabricClient</h4>
+              <div class="markdown level1 summary"><p>Static fabric client instance used for interacting with service fabric infrastructure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly FabricClient ServiceFabricClient</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.FabricClient</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_TokenSource.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.TokenSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L99">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_TokenSource" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.TokenSource">TokenSource</h4>
+              <div class="markdown level1 summary"><p>CancellationTokenSource instance used to cancel running operations.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected readonly CancellationTokenSource TokenSource</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationTokenSource</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_CanRead.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.CanRead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L149">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_CanRead" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.CanRead">CanRead</h4>
+              <div class="markdown level1 summary"><p>Indicates if the partition can be read from within this process.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool CanRead { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_CanWrite.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.CanWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L154">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_CanWrite" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.CanWrite">CanWrite</h4>
+              <div class="markdown level1 summary"><p>Indicates if the partition can be written to from within this process.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool CanWrite { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_Configuration.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.Configuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L144">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_Configuration" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.Configuration">Configuration</h4>
+              <div class="markdown level1 summary"><p>QueueServiceConfiguration instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TConfiguration Configuration { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TConfiguration</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_CurrentRole.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.CurrentRole%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L134">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_CurrentRole" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.CurrentRole">CurrentRole</h4>
+              <div class="markdown level1 summary"><p>CurrentRole of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ReplicaRole CurrentRole { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ReplicaRole</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_PartitionOffset.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.PartitionOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L159">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_PartitionOffset" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.PartitionOffset">PartitionOffset</h4>
+              <div class="markdown level1 summary"><p>Gets the partition offset number.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long PartitionOffset { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnAbort.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnAbort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L221">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnAbort" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnAbort">OnAbort()</h4>
+              <div class="markdown level1 summary"><p>Called when the service instance is being aborted.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void OnAbort()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.OnAbort()</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnChangeRoleAsync_System_Fabric_ReplicaRole_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnChangeRoleAsync(System.Fabric.ReplicaRole%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L260">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnChangeRoleAsync_System_Fabric_ReplicaRole_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnChangeRoleAsync(System.Fabric.ReplicaRole,System.Threading.CancellationToken)">OnChangeRoleAsync(ReplicaRole, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Called when the service instance changes role.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Task OnChangeRoleAsync(ReplicaRole newRole, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ReplicaRole</span></td>
+                    <td><em>newRole</em></td>
+                    <td><p>New role.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.OnChangeRoleAsync(System.Fabric.ReplicaRole, System.Threading.CancellationToken)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnCloseAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnCloseAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L240">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnCloseAsync_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnCloseAsync(System.Threading.CancellationToken)">OnCloseAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Called when the service instance if being closed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Task OnCloseAsync(CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.OnCloseAsync(System.Threading.CancellationToken)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnDataLossAsync_Microsoft_ServiceFabric_Data_RestoreContext_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnDataLossAsync(Microsoft.ServiceFabric.Data.RestoreContext%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L212">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnDataLossAsync_Microsoft_ServiceFabric_Data_RestoreContext_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnDataLossAsync(Microsoft.ServiceFabric.Data.RestoreContext,System.Threading.CancellationToken)">OnDataLossAsync(RestoreContext, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Override this to receive a call if Service Fabric detects a possible data loss condition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Task&lt;bool&gt; OnDataLossAsync(RestoreContext restoreCtx, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Microsoft.ServiceFabric.Data.RestoreContext</span></td>
+                    <td><em>restoreCtx</em></td>
+                    <td><p>RestoreContext instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><p>Task that represents the asynchronous operation. The Boolean task result indicates whether or not state was restored, 
+e.g. from a backup. True indicates that state was restored from an external source and false indicates that the state has not been changed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.OnDataLossAsync(Microsoft.ServiceFabric.Data.RestoreContext, System.Threading.CancellationToken)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnOpenAsync_System_Fabric_ReplicaOpenMode_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnOpenAsync(System.Fabric.ReplicaOpenMode%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L281">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnOpenAsync_System_Fabric_ReplicaOpenMode_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnOpenAsync(System.Fabric.ReplicaOpenMode,System.Threading.CancellationToken)">OnOpenAsync(ReplicaOpenMode, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Called when the service instance is started.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Task OnOpenAsync(ReplicaOpenMode openMode, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Fabric.ReplicaOpenMode</span></td>
+                    <td><em>openMode</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.OnOpenAsync(System.Fabric.ReplicaOpenMode, System.Threading.CancellationToken)</span></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthPartitionCapacity_System_String_System_String_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ReportHealthPartitionCapacity(System.String%2CSystem.String%2CSystem.Int64%2CSystem.Int64%2CSystem.Double%2CSystem.Double%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L323">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthPartitionCapacity_System_String_System_String_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ReportHealthPartitionCapacity(System.String,System.String,System.Int64,System.Int64,System.Double,System.Double,System.TimeSpan)">ReportHealthPartitionCapacity(String, String, Int64, Int64, Double, Double, TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>Reports the capacity health of a collection in a partition to Service Fabric.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReportHealthPartitionCapacity(string healthSourceId, string name, long count, long capacity, double pWarn, double pError, TimeSpan ttl)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>healthSourceId</em></td>
+                    <td><p>Health source identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>Health property name.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>count</em></td>
+                    <td><p>Current number of items in the collection.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>capacity</em></td>
+                    <td><p>Configured capacity of the collection.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>pWarn</em></td>
+                    <td><p>Warning percent of capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>pError</em></td>
+                    <td><p>Error percent of capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>ttl</em></td>
+                    <td><p>Health report time to live.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthReplicaCapacity_System_String_System_String_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ReportHealthReplicaCapacity(System.String%2CSystem.String%2CSystem.Int64%2CSystem.Int64%2CSystem.Double%2CSystem.Double%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L359">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthReplicaCapacity_System_String_System_String_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ReportHealthReplicaCapacity(System.String,System.String,System.Int64,System.Int64,System.Double,System.Double,System.TimeSpan)">ReportHealthReplicaCapacity(String, String, Int64, Int64, Double, Double, TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>Reports the capacity health of a collection in a partition to Service Fabric.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReportHealthReplicaCapacity(string healthSourceId, string name, long count, long capacity, double pWarn, double pError, TimeSpan ttl)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>healthSourceId</em></td>
+                    <td><p>Health source identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>Health property name.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>count</em></td>
+                    <td><p>Current number of items in the collection.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>capacity</em></td>
+                    <td><p>Configured capacity of the collection.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>pWarn</em></td>
+                    <td><p>Warning percent of capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>pError</em></td>
+                    <td><p>Error percent of capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>ttl</em></td>
+                    <td><p>Health report time to live.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthReplicaLatency_System_String_System_String_ServiceFabric_Archetype_Common_Diagnostics_AverageLatency_System_Int64_System_Int64_System_TimeSpan_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ReportHealthReplicaLatency(System.String%2CSystem.String%2CServiceFabric.Archetype.Common.Diagnostics.AverageLatency%2CSystem.Int64%2CSystem.Int64%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L394">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthReplicaLatency_System_String_System_String_ServiceFabric_Archetype_Common_Diagnostics_AverageLatency_System_Int64_System_Int64_System_TimeSpan_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ReportHealthReplicaLatency(System.String,System.String,ServiceFabric.Archetype.Common.Diagnostics.AverageLatency,System.Int64,System.Int64,System.TimeSpan)">ReportHealthReplicaLatency(String, String, AverageLatency, Int64, Int64, TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>Reports the capacity health of a collection in a partition to Service Fabric.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReportHealthReplicaLatency(string healthSourceId, string name, AverageLatency latency, long warnValue, long errorValue, TimeSpan ttl)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>healthSourceId</em></td>
+                    <td><p>Health source identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>Health property name.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="ServiceFabric.Archetype.Common.Diagnostics.AverageLatency.html#ServiceFabric_Archetype_Common_Diagnostics_AverageLatency">AverageLatency</a></td>
+                    <td><em>latency</em></td>
+                    <td><p>AverageLatency instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>warnValue</em></td>
+                    <td><p>Warning value.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>errorValue</em></td>
+                    <td><p>Error value.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>ttl</em></td>
+                    <td><p>Health report time to live.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthRequestPerSecond_System_String_System_String_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ReportHealthRequestPerSecond(System.String%2CSystem.String%2CSystem.Int64%2CSystem.Int64%2CSystem.Double%2CSystem.Double%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L425">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportHealthRequestPerSecond_System_String_System_String_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ReportHealthRequestPerSecond(System.String,System.String,System.Int64,System.Int64,System.Double,System.Double,System.TimeSpan)">ReportHealthRequestPerSecond(String, String, Int64, Int64, Double, Double, TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>Reports the requests per second as part of the capacity of a partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReportHealthRequestPerSecond(string healthSourceId, string name, long rps, long capacity = 0L, double pWarn = 0.75, double pError = 0.9, TimeSpan ttl = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>healthSourceId</em></td>
+                    <td><p>Health source identifier.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>Health property name.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>rps</em></td>
+                    <td><p>Current requests per second value.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>capacity</em></td>
+                    <td><p>Configured capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>pWarn</em></td>
+                    <td><p>Warning percent of capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><em>pError</em></td>
+                    <td><p>Error percent of capacity.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>ttl</em></td>
+                    <td><p>Health report time to live.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportLoad_System_Collections_Generic_IEnumerable_System_Fabric_LoadMetric__.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ReportLoad(System.Collections.Generic.IEnumerable%7BSystem.Fabric.LoadMetric%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L532">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportLoad_System_Collections_Generic_IEnumerable_System_Fabric_LoadMetric__" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ReportLoad(System.Collections.Generic.IEnumerable{System.Fabric.LoadMetric})">ReportLoad(IEnumerable&lt;LoadMetric&gt;)</h4>
+              <div class="markdown level1 summary"><p>Reports the load of the partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReportLoad(IEnumerable&lt;LoadMetric&gt; metrics)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Fabric.LoadMetric</span>&gt;</td>
+                    <td><em>metrics</em></td>
+                    <td><p>IEnumerable containing the set of LoadMetric instances to report.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportNodeHealthAndLoadAsync_System_TimeSpan_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.ReportNodeHealthAndLoadAsync(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L455">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_ReportNodeHealthAndLoadAsync_System_TimeSpan_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.ReportNodeHealthAndLoadAsync(System.TimeSpan)">ReportNodeHealthAndLoadAsync(TimeSpan)</h4>
+              <div class="markdown level1 summary"><p>Reports the health of a node.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Task ReportNodeHealthAndLoadAsync(TimeSpan ttl)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>ttl</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_RunAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.RunAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L300">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_RunAsync_System_Threading_CancellationToken_" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.RunAsync(System.Threading.CancellationToken)">RunAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>This is the main entry point for your service&#39;s partition replica. 
+RunAsync executes when the primary replica for this partition has write status.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Task RunAsync(CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>CancellationToken instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">Microsoft.ServiceFabric.Services.Runtime.StatefulServiceBase.RunAsync(System.Threading.CancellationToken)</span></div>
+              <h3 id="events">Events
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnAbortEvent.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnAbortEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L119">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnAbortEvent" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnAbortEvent">OnAbortEvent</h4>
+              <div class="markdown level1 summary"><p>OnAbort event handler.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler OnAbortEvent</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.EventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnCloseEvent.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnCloseEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L114">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnCloseEvent" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnCloseEvent">OnCloseEvent</h4>
+              <div class="markdown level1 summary"><p>OnClose event handler.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler OnCloseEvent</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.EventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnOpenEvent.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnOpenEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L109">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnOpenEvent" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnOpenEvent">OnOpenEvent</h4>
+              <div class="markdown level1 summary"><p>OnOpen event handler.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler OnOpenEvent</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.EventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnRoleChangeEvent.md&amp;value=---%0Auid%3A%20ServiceFabric.Archetype.Common.GenericInt64PartitionService%601.OnRoleChangeEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/Azure/service-fabric-dotnet-priority-queue-service/blob/master/src/ServiceFabric.Common/GenericInt64StatefulService.cs/#L104">View Source</a>
+              </span>
+              <h4 id="ServiceFabric_Archetype_Common_GenericInt64PartitionService_1_OnRoleChangeEvent" data-uid="ServiceFabric.Archetype.Common.GenericInt64PartitionService`1.OnRoleChangeEvent">OnRoleChangeEvent</h4>
+              <div class="markdown level1 summary"><p>OnRoleChanged event handler.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler&lt;RoleChangedEventArgs&gt; OnRoleChangeEvent</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="ServiceFabric.Archetype.Common.RoleChangedEventArgs.html#ServiceFabric_Archetype_Common_RoleChangedEventArgs">RoleChangedEventArgs</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

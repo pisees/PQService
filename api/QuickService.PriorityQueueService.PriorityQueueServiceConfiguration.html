@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PriorityQueueServiceConfiguration
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PriorityQueueServiceConfiguration
+   ">
+    <meta name="generator" content="docfx 2.2.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L20" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration">Class PriorityQueueServiceConfiguration
+              </h1>
+              <div class="markdown level0 summary"><p>PriorityQueueService configuration class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">PriorityQueueServiceConfiguration</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:QuickService.PriorityQueueService</h6>
+              <h6><strong>Assembly</strong>:QuickService.PriorityQueueService.dll</h6>
+              <h5 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonObject(MemberSerialization = MemberSerialization.OptOut)]
+public class PriorityQueueServiceConfiguration : IQueueServiceConfiguration</code></pre>
+              </div>
+              <h5 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>The ConfigurationProvider class uses Json.NET to serialize the class internally. All of the properties should be exposed as read only properties,
+requiring public getter, but private setters. This class is used by the QueuePartitionOperation and GenericInt64StatefulService classes via the interfaces
+below. THe class must be marked using the JsonObjectAttribute and each property must be marked with the JsonPropertyAttribute. Any non standard types
+must use a JsonConverter like the TimeSpan based properties below.</p>
+</div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_CapacityErrorPercent.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.CapacityErrorPercent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L58">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_CapacityErrorPercent" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.CapacityErrorPercent">CapacityErrorPercent</h4>
+              <div class="markdown level1 summary"><p>Percent of capacity where a health error will be raised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double CapacityErrorPercent { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_CapacityErrorPercent">IQueueServiceConfiguration.CapacityErrorPercent</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_CapacityWarningPercent.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.CapacityWarningPercent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L52">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_CapacityWarningPercent" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.CapacityWarningPercent">CapacityWarningPercent</h4>
+              <div class="markdown level1 summary"><p>Percent of capacity where a health warning will be raised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double CapacityWarningPercent { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_CapacityWarningPercent">IQueueServiceConfiguration.CapacityWarningPercent</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_ExpiredItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.ExpiredItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L143">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_ExpiredItemsHealthReportTitle" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.ExpiredItemsHealthReportTitle">ExpiredItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for expired items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string ExpiredItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_ExpiredItemsHealthReportTitle">IQueueServiceConfiguration.ExpiredItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_FabricOperationTimeout.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.FabricOperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L95">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_FabricOperationTimeout" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.FabricOperationTimeout">FabricOperationTimeout</h4>
+              <div class="markdown level1 summary"><p>Operation timeout for fabric operations in seconds.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan FabricOperationTimeout { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_FabricOperationTimeout">IQueueServiceConfiguration.FabricOperationTimeout</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_HealthCheckInterval.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.HealthCheckInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L116">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_HealthCheckInterval" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.HealthCheckInterval">HealthCheckInterval</h4>
+              <div class="markdown level1 summary"><p>Time interval delay before health checks begin.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan HealthCheckInterval { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_HealthCheckInterval">IQueueServiceConfiguration.HealthCheckInterval</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_HealthCheckStartDelay.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.HealthCheckStartDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L109">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_HealthCheckStartDelay" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.HealthCheckStartDelay">HealthCheckStartDelay</h4>
+              <div class="markdown level1 summary"><p>Time interval between health checks.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan HealthCheckStartDelay { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_HealthCheckStartDelay">IQueueServiceConfiguration.HealthCheckStartDelay</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_ItemExpiration.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.ItemExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L102">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_ItemExpiration" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.ItemExpiration">ItemExpiration</h4>
+              <div class="markdown level1 summary"><p>Duration for a single item to expire.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan ItemExpiration { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_ItemExpiration">IQueueServiceConfiguration.ItemExpiration</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_ItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.ItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L155">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_ItemsHealthReportTitle" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.ItemsHealthReportTitle">ItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for all items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string ItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_ItemsHealthReportTitle">IQueueServiceConfiguration.ItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseCheckInterval.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseCheckInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L130">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseCheckInterval" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseCheckInterval">LeaseCheckInterval</h4>
+              <div class="markdown level1 summary"><p>Time interval between checks for lease expiration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan LeaseCheckInterval { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_LeaseCheckInterval">IQueueServiceConfiguration.LeaseCheckInterval</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseCheckStartDelay.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseCheckStartDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L123">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseCheckStartDelay" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseCheckStartDelay">LeaseCheckStartDelay</h4>
+              <div class="markdown level1 summary"><p>Time interval between health checks.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan LeaseCheckStartDelay { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_LeaseCheckStartDelay">IQueueServiceConfiguration.LeaseCheckStartDelay</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeasedItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeasedItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L137">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeasedItemsHealthReportTitle" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeasedItemsHealthReportTitle">LeasedItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for leased items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string LeasedItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_LeasedItemsHealthReportTitle">IQueueServiceConfiguration.LeasedItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseDuration.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L88">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseDuration" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseDuration">LeaseDuration</h4>
+              <div class="markdown level1 summary"><p>Lease item percent of queue capacity before error.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+[JsonConverter(typeof (JsonTimeSpanConverter))]
+public TimeSpan LeaseDuration { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_LeaseDuration">IQueueServiceConfiguration.LeaseDuration</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseItemPercentError.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseItemPercentError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L82">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseItemPercentError" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseItemPercentError">LeaseItemPercentError</h4>
+              <div class="markdown level1 summary"><p>Lease item percent of queue capacity before error.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double LeaseItemPercentError { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_LeaseItemPercentError">IQueueServiceConfiguration.LeaseItemPercentError</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseItemPercentWarning.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseItemPercentWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L76">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_LeaseItemPercentWarning" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.LeaseItemPercentWarning">LeaseItemPercentWarning</h4>
+              <div class="markdown level1 summary"><p>Lease item percent of queue capacity before warning.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public double LeaseItemPercentWarning { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_LeaseItemPercentWarning">IQueueServiceConfiguration.LeaseItemPercentWarning</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaxExpiredCapacityPerPartition.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaxExpiredCapacityPerPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L46">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaxExpiredCapacityPerPartition" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaxExpiredCapacityPerPartition">MaxExpiredCapacityPerPartition</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that may be in error or expired within a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int MaxExpiredCapacityPerPartition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_MaxExpiredCapacityPerPartition">IQueueServiceConfiguration.MaxExpiredCapacityPerPartition</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaximumDequeueCount.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaximumDequeueCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L64">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaximumDequeueCount" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaximumDequeueCount">MaximumDequeueCount</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that can be dequeued at once.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int MaximumDequeueCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_MaximumDequeueCount">IQueueServiceConfiguration.MaximumDequeueCount</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaxLeaseCapacityPerPartition.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaxLeaseCapacityPerPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L40">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaxLeaseCapacityPerPartition" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaxLeaseCapacityPerPartition">MaxLeaseCapacityPerPartition</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that may be leased within a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int MaxLeaseCapacityPerPartition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_MaxLeaseCapacityPerPartition">IQueueServiceConfiguration.MaxLeaseCapacityPerPartition</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaxQueueCapacityPerPartition.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaxQueueCapacityPerPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L34">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_MaxQueueCapacityPerPartition" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.MaxQueueCapacityPerPartition">MaxQueueCapacityPerPartition</h4>
+              <div class="markdown level1 summary"><p>Maximum number of items that may be held within a single partition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int MaxQueueCapacityPerPartition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_MaxQueueCapacityPerPartition">IQueueServiceConfiguration.MaxQueueCapacityPerPartition</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_NumberOfQueues.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.NumberOfQueues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L70">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_NumberOfQueues" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.NumberOfQueues">NumberOfQueues</h4>
+              <div class="markdown level1 summary"><p>Number of priorities for this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public int NumberOfQueues { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_NumberOfQueues">IQueueServiceConfiguration.NumberOfQueues</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_QueuedItemsHealthReportTitle.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.QueuedItemsHealthReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L149">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_QueuedItemsHealthReportTitle" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.QueuedItemsHealthReportTitle">QueuedItemsHealthReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the health report for queued items.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string QueuedItemsHealthReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_QueuedItemsHealthReportTitle">IQueueServiceConfiguration.QueuedItemsHealthReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_QueueLengthLoadReportTitle.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.QueueLengthLoadReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L167">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_QueueLengthLoadReportTitle" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.QueueLengthLoadReportTitle">QueueLengthLoadReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the load report for queue length.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string QueueLengthLoadReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_QueueLengthLoadReportTitle">IQueueServiceConfiguration.QueueLengthLoadReportTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/toddabel/PQService/new/master/docfx_project/apispec/new?filename=QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_RequestsPerSecondLoadReportTitle.md&amp;value=---%0Auid%3A%20QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.RequestsPerSecondLoadReportTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/toddabel/PQService/blob/master/src/PriorityQueueService/PriorityQueueServiceConfiguration.cs/#L161">View Source</a>
+              </span>
+              <h4 id="QuickService_PriorityQueueService_PriorityQueueServiceConfiguration_RequestsPerSecondLoadReportTitle" data-uid="QuickService.PriorityQueueService.PriorityQueueServiceConfiguration.RequestsPerSecondLoadReportTitle">RequestsPerSecondLoadReportTitle</h4>
+              <div class="markdown level1 summary"><p>Title of the load report for RPS.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[JsonProperty]
+public string RequestsPerSecondLoadReportTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="QuickService.QueueService.IQueueServiceConfiguration.html#QuickService_QueueService_IQueueServiceConfiguration_RequestsPerSecondLoadReportTitle">IQueueServiceConfiguration.RequestsPerSecondLoadReportTitle</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
