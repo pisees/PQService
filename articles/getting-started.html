@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Service Fabric .NET Priority Queue Service (0.9.0) </title>
+    <title>Getting Started with the Service Fabric Priority Queue </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Service Fabric .NET Priority Queue Service (0.9.0) ">
+    <meta name="title" content="Getting Started with the Service Fabric Priority Queue ">
     <meta name="generator" content="docfx 2.2.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -64,15 +64,26 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <a href="https://github.com/toddabel/PQService/blob/master/docfx_project/articles/intro.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
-              <h1 id="service-fabric-net-priority-queue-service-0-9-0">Service Fabric .NET Priority Queue Service (0.9.0)</h1>
+              <a href="https://github.com/toddabel/PQService/blob/master/docfx_project/articles/getting-started.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="getting-started-with-the-service-fabric-priority-queue">Getting Started with the Service Fabric Priority Queue</h1>
               
-<p>The Service Fabric .NET Priority Queue Service allows you to build applications that have the need for a low latency, high scale priority queue. Out of the box, this example code provides a priority queue to which items can be enqueued and dequeued within a Service Fabric cluster.  </p>
-<h2 id="what-is-the-priority-queue-service">What is the Priority Queue Service</h2>
-<p>The Priority Queue Service is a service for storing messages that can be stored and accessed quickly within a Service Fabric cluster. The queue can be configured to have any number of partitions, each partition can contain gigabytes of messages, constrained by the size of the node. A single message is a JSON message of any size and type, the message payload is opaque to the service. The queue service supports leasing of messages, message expiration, handles poison messages and has separate dead letter storage. This is not intended meet the needs of a pub-sub service, <a href="https://azure.microsoft.com/en-us/services/event-hubs/">Azure Event Hubs</a> is intended for that purpose.</p>
-<h2 id="topology">Topology</h2>
-<p>The Priority Queue Service can be deployed as part of your application within your Service Fabric Cluster. There are multiple topologies that can be supported, two are shown in the diagram below</p>
-<p><img src="../images/queue-cluster-topology.png" alt="Topology"></p>
+<p>There are seven projects within the <em>PriorityQueueSample</em> solution.</p>
+<ol>
+<li><strong>Common</strong> - Contains common components that are used in multiple projects and can be re-used in your projects too<ul>
+<li><strong>Configuration</strong> - Contains a configuration provider that can make using Service Fabric configuration easier to use</li>
+<li><strong>Diagnostics</strong> - Contains the minimal event sources used in the library code and diagnostic classes</li>
+<li><strong>ErrorHandling</strong> - Contains a number of retry policy classes</li>
+<li><strong>Http</strong> - Http helper classes</li>
+<li><strong>Other</strong> helper classes such as Guard, a thread safe Random number generator and base class for a Int64 based stateful Service</li>
+</ul>
+</li>
+<li><strong>PriorityQueueSample</strong> - This is the main Service Fabric project. Your application manifest resides here an you can publish to Azure or local from this project</li>
+<li><strong>PriorityQueueService</strong> - Stateful Priority Queue Service</li>
+<li><strong>QueueClient</strong> - Client library to facilitate communication with the stateful Service</li>
+<li><strong>QueueService</strong> - Base queue service from which other queue can be built. Provides the majority of the priority queue service code</li>
+<li><strong>QueueServiceConsole</strong> - Test console built using the queue client library. Shows how to use the library and allows interaction with the priority queue service including load, fault and chaos tests</li>
+<li><strong>QueueServiceTests</strong> - Contain various unit and component level tests</li>
+</ol>
 
             </article>
           </div>
