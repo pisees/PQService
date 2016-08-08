@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="PriorityQueueSampleType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="PriorityQueueService_MinReplicaSetSize" DefaultValue="2" />
+    <Parameter Name="PriorityQueueService_PartitionCount" DefaultValue="2" />
+    <Parameter Name="PriorityQueueService_LowKeyValue" DefaultValue="0" />
+    <Parameter Name="PriorityQueueService_HighKeyValue" DefaultValue="1" />
+    <Parameter Name="PriorityQueueService_TargetReplicaSetSize" DefaultValue="3" />
+  </Parameters>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="PriorityQueueServicePkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <DefaultServices>
+    <Service Name="PriorityQueueService">
+      <StatefulService ServiceTypeName="PriorityQueueServiceType" TargetReplicaSetSize="[PriorityQueueService_TargetReplicaSetSize]" MinReplicaSetSize="[PriorityQueueService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[PriorityQueueService_PartitionCount]" LowKey="[PriorityQueueService_LowKeyValue]" HighKey="[PriorityQueueService_HighKeyValue]" />
+      </StatefulService>
+    </Service>
+  </DefaultServices>
+</ApplicationManifest>

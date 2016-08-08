@@ -1,0 +1,16 @@
+﻿{
+  "BackgoundTaskInterval": "00:01:00",
+  "CapacityErrorPercent": 0.95,
+  "CapacityWarningPercent": 0.80,
+  "FabricOperationTimeout" : "00:00:04",
+  "HealthCheckInterval" : "00:00:30",
+  "ItemExpiration" : "2.00:00:00",
+  "LeaseDuration" : "00:02:00",
+  "LeaseItemPercentError" :  0.20,
+  "LeaseItemPercentWarning": 0.10,
+  "MaximumDequeueCount" : 5,
+  "MaxExpiredCapacityPerPartition": 1000,
+  "MaxLeaseCapacityPerPartition": 15000,
+  "MaxQueueCapacityPerPartition": 50000,
+  "NumberOfQueues" : 5
+}

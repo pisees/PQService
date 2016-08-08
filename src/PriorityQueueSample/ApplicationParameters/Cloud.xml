@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/PriorityQueueSample" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="PriorityQueueService_PartitionCount" Value="50" />
+    <Parameter Name="PriorityQueueService_HighKeyValue" Value="49" />
+  </Parameters>
+</Application>
