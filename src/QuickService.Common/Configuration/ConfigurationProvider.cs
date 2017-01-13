@@ -18,6 +18,7 @@ namespace QuickService.Common.Configuration
     using System.Fabric;
     using System.Fabric.Description;
     using System.IO;
+    using System.Linq;
     using System.Security;
     using System.Security.Cryptography;
     using System.Text;
@@ -228,7 +229,8 @@ namespace QuickService.Common.Configuration
                     {
                         // Get the section and calculate the hash.
                         ConfigurationSection section = sections[_serviceNameUri.AbsoluteUri];
-                        byte[] hash = md5.ComputeHash(Encoding.UTF8.GetBytes(section.ToString()));
+                        string sectionContent = string.Join("|", section.Parameters.Select(p => $"{p.Name}~{p.Value}"));
+                        byte[] hash = md5.ComputeHash(Encoding.UTF8.GetBytes(sectionContent));
 
                         if (false == CompareHashes(hash, _configSectionHash))
                         {
