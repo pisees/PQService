@@ -340,7 +340,7 @@ namespace QuickService.QueueService
         /// <param name="lease">Duration of the new lease.</param>
         /// <param name="cancellationToken">Cancellation token instance.</param>
         /// <returns>IEnumerable of Boolean values indicating success.</returns>
-        private async Task<IEnumerable<bool>> UpdateItemsLease(ITransaction tx, IEnumerable<PopReceipt> keys, TimeSpan lease, CancellationToken cancellationToken)
+        private async Task<IEnumerable<bool>> UpdateItemsLeaseAsync(ITransaction tx, IEnumerable<PopReceipt> keys, TimeSpan lease, CancellationToken cancellationToken)
         {
             Guard.ArgumentNotNull(tx, nameof(tx));
             Guard.ArgumentNotNull(keys, nameof(keys));
@@ -393,7 +393,7 @@ namespace QuickService.QueueService
         /// <param name="keys">List of item keys to update.</param>
         /// <param name="cancellationToken">Cancellation token instance.</param>
         /// <returns>IEnumerable of Boolean values indicating success.</returns>
-        private async Task<IEnumerable<bool>> RemoveLeasedItems(ITransaction tx, IEnumerable<PopReceipt> keys, CancellationToken cancellationToken)
+        private async Task<IEnumerable<bool>> RemoveLeasedItemsAsync(ITransaction tx, IEnumerable<PopReceipt> keys, CancellationToken cancellationToken)
         {
             Guard.ArgumentNotNull(tx, nameof(tx));
             Guard.ArgumentNotNull(keys, nameof(keys));
@@ -1332,11 +1332,11 @@ namespace QuickService.QueueService
                     // If the lease time is greater than zero, update the lease time.
                     if (lease > TimeSpan.Zero)
                     {
-                        results = await UpdateItemsLease(tx, keys, lease, cancellationToken).ConfigureAwait(false);
+                        results = await UpdateItemsLeaseAsync(tx, keys, lease, cancellationToken).ConfigureAwait(false);
                     }
                     else // the new lease value is zero or negative, remove the item if present.
                     {
-                        results = await RemoveLeasedItems(tx, keys, cancellationToken).ConfigureAwait(false);
+                        results = await RemoveLeasedItemsAsync(tx, keys, cancellationToken).ConfigureAwait(false);
                     }
 
                     // Commit the transaction.

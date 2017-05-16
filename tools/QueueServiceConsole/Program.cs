@@ -251,7 +251,7 @@ namespace QueueServiceConsole
         /// <summary>
         /// Empties a partition of all items.
         /// </summary>
-        private static async Task Empty()
+        private static async Task EmptyAsync()
         {
             int partition = 0, temp;
 
