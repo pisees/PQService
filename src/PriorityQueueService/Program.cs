@@ -75,7 +75,7 @@ namespace QuickService.PriorityQueueService
             }
 
             // Marking as observed to prevent process exit.
-            e.SetObserved();
+            //e.SetObserved();
         }
     }
 }
