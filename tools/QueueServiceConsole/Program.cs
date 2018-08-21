@@ -81,6 +81,7 @@ namespace QueueServiceConsole
                             break;
 
                         case ConsoleKey.E:
+                            Console.WriteLine("not implemented yet");
                             //EmptyPartition();
                             break;
 
