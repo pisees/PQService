@@ -82,6 +82,8 @@ namespace QueueServiceConsole
 
                     Stopwatch swCall = Stopwatch.StartNew();
                     IEnumerable<QueueItem<T>> items = qc.DequeueAsync(_batchSize, cancellationToken: _cancellationToken).GetAwaiter().GetResult();
+                    //if (items == null) throw new Exception("No items found to qc.DequeueAsync");
+
                     swCall.Stop();
 
                     // Track the call time.
@@ -102,6 +104,7 @@ namespace QueueServiceConsole
                     else // Release the held leases for each item.
                     {
                         IEnumerable<bool> results = qc.ReleaseLeaseAsync(keys, _cancellationToken).GetAwaiter().GetResult();
+                        //if (results == null) throw new Exception("No results found from qc.ReleaseLeaseAsync");
                         foreach (bool bResult in results)
                         {
                             if (bResult)

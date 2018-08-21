@@ -15,7 +15,7 @@
                                     StoreLocation="CurrentUser"
                                     StoreName="My" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="toddabel.westus.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="DB2AF63BBBFF143475780A54A57C8BD483702B7F" FindType="FindByThumbprint" FindValue="DB2AF63BBBFF143475780A54A57C8BD483702B7F" StoreLocation="CurrentUser" StoreName="My"
+  <ClusterConnectionParameters
   />
-  <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
+  <ApplicationParameterFile Path="..\ApplicationParameters\Local.5Node.xml" />
 </PublishProfile>
