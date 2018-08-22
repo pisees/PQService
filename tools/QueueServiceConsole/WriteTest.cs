@@ -97,19 +97,22 @@ namespace QueueServiceConsole
                 {
                     // Create a list of items to add.
                     List<T> addItems = new List<T>();
-                    for(int i = 0; i < _batchSize; i++)
+                    for (int i = 0; i < _batchSize; i++)
                     {
                         addItems.Add(_createInstance());
                     }
 
                     int queue = RandomThreadSafe.Instance.Next(0, _priorityCount);
-
+                    //Console.WriteLine($"WriteTest.WriteThreadProc Thread:{System.Threading.Thread.CurrentThread.ManagedThreadId}, Queue{queue}");
+                    
                     Stopwatch swCall = Stopwatch.StartNew();
-                    IEnumerable<QueueItem<T>> items = qc.EnqueueAsync(addItems, cancellationToken: _cancellationToken).GetAwaiter().GetResult();
+                    //TODO: change to specify queue. Note can also specify lease time and expiration here as well!
+                    //IEnumerable<QueueItem<T>> items = qc.EnqueueAsync(addItems, cancellationToken: _cancellationToken).GetAwaiter().GetResult();
+                    IEnumerable<QueueItem<T>> items = qc.EnqueueAsync(addItems, queue, cancellationToken: _cancellationToken).GetAwaiter().GetResult();
                     swCall.Stop();
 
                     // Add the number of items added successfully.
-                    Interlocked.Add(ref _successfulRequests, items.Count());
+                    Interlocked.Add(ref _successfulRequests, (int?) items.Count() ?? 0);
 
                     // Track the call time.
                     TrackCallData(swCall.ElapsedMilliseconds);
