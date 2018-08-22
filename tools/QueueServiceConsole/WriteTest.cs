@@ -112,7 +112,7 @@ namespace QueueServiceConsole
                     swCall.Stop();
 
                     // Add the number of items added successfully.
-                    Interlocked.Add(ref _successfulRequests, (int?) items.Count() ?? 0);
+                    Interlocked.Add(ref _successfulRequests, items.Count());
 
                     // Track the call time.
                     TrackCallData(swCall.ElapsedMilliseconds);

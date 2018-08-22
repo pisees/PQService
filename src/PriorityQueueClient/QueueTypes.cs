@@ -50,7 +50,7 @@ namespace QuickService.QueueClient
         /// <summary>
         /// Constant representing the last queue, N.
         /// </summary>
-        public const int LastQueue = -1; //TODO: This is - 1 but I think this is an error.
+        public const int LastQueue = -1;
 
         /// <summary>
         /// Constant representing the dictionary containing leased items.

@@ -194,13 +194,7 @@ namespace QuickService.QueueService
             for(int i=0; i < _queueNames.Length; i++)
             {
                 _queueNames[i] = string.Format(c_QueueNameTemplate, i);
-                _eventSource.QueueMethodLogging("QueuePartitionOperations::ctor", Context.PartitionId, Context.ReplicaId,
-                   0, $"_queueNames[{i}]: {_queueNames[i]}");
-
             }
-
-            _eventSource.QueueMethodLogging("QueuePartitionOperations::ctor", Context.PartitionId, Context.ReplicaId, 
-                0, $"_queueNames.Count: {_queueNames.Count()}");
 
             // Subscribe to the open and change role events.
             service.OnRoleChangeEvent += Service_OnRoleChangedEvent;
@@ -798,7 +792,7 @@ namespace QuickService.QueueService
         public async Task<long> CountAsync(QueueType queue, CancellationToken ct)
         {
             _requestsPerSecond += 1;
-            _eventSource.QueueMethodStart(Context.PartitionId, Context.ReplicaId, nameof(CountAsync), $"queueType: {(int)queue}");
+            _eventSource.QueueMethodStart(Context.PartitionId, Context.ReplicaId, nameof(CountAsync));
 
             // Check that a valid queue is being asked for.
             if ((queue >= _queueNames.Length) || (queue < QueueType.ItemQueue))
@@ -817,57 +811,16 @@ namespace QuickService.QueueService
                 var expiredItems = await GetExpiredItemsDictionaryAsync().ConfigureAwait(false);
                 var leasedItems = await GetLeasedItemsDictionaryAsync().ConfigureAwait(false);
 
-                var tasks = GetAllQueuesTask();
-                await Task.WhenAll(tasks).ConfigureAwait(false);
-                //_eventSource.QueueMethodLogging(nameof(CountAsync), Context.PartitionId, Context.ReplicaId, sw.ElapsedMilliseconds, "waited for tasks");
-
                 using (ITransaction tx = StateManager.CreateTransaction())
                 {
                     switch (queue)
                     {
                         case QueueType.AllQueues:
                             var result = Parallel.For(0, _queueNames.Length, async (i) =>
-                                {
-                                    int retryCount = 0;
-                                    while (true)
-                                    {
-                                        using (ITransaction tx2 = StateManager.CreateTransaction())
-                                        {
-                                            try
-                                            {
-                                                //_eventSource.QueueMethodLogging(nameof(CountAsync), Context.PartitionId, Context.ReplicaId,
-                                                //    sw.ElapsedMilliseconds, "new code in Parallel.For");
-                                                var q = tasks[i].Result;
-                                                Interlocked.Add(ref totalCount, await q.GetCountAsync(tx2).ConfigureAwait(false));
-                                                await tx2.CommitAsync().ConfigureAwait(false);
-                                                break;
-
-                                            }
-                                            catch (InvalidOperationException ex)
-                                            {
-                                                //retry
-                                            }
-
-                                            _eventSource.QueueMethodLogging(nameof(CountAsync), Context.PartitionId, Context.ReplicaId,
-                                            sw.ElapsedMilliseconds, $"retry QueueType.AllQueues for queue {_queueNames[i]}");
-
-                                            ct.ThrowIfCancellationRequested();
-
-                                            // BackOffAsync method not shown
-                                            if (retryCount++ >= 5)
-                                            {
-
-                                                _eventSource.QueueMethodLogging(nameof(CountAsync), Context.PartitionId, Context.ReplicaId,
-                                                sw.ElapsedMilliseconds, $"failed QueueType.AllQueuese for queue {_queueNames[i]}");
-                                                break;
-                                            }
-
-                                            await Task.Delay(1000).ConfigureAwait(false);
-                                        }
-                                    }
-                                }
-                            );
-
+                            {
+                                var q = await GetQueueAsync(i).ConfigureAwait(false);
+                                Interlocked.Add(ref totalCount, await q.GetCountAsync(tx).ConfigureAwait(false));
+                            });
                             break;
 
                         case QueueType.LeaseQueue:
@@ -889,10 +842,7 @@ namespace QuickService.QueueService
                             var qx = await GetQueueAsync(queue).ConfigureAwait(false);
                             totalCount = await qx.GetCountAsync(tx).ConfigureAwait(false);
                             break;
-
                     }
-
-                    await tx.CommitAsync().ConfigureAwait(false);
                 }
             }
             catch (Exception ex)
@@ -905,35 +855,10 @@ namespace QuickService.QueueService
             sw.Stop();
             if (null != _eventSource)
             {
-                _eventSource.QueueMethodLogging(nameof(CountAsync), Context.PartitionId, Context.ReplicaId, sw.ElapsedMilliseconds, $"queueType: {(int)queue}, TotalCount: {totalCount}.");
+                _eventSource.QueueMethodLogging(nameof(CountAsync), Context.PartitionId, Context.ReplicaId, sw.ElapsedMilliseconds, $"TotalCount: {totalCount}.");
             }
 
             return totalCount;
-        }
-
-        private List<Task<IReliableQueue<PopReceipt>>> GetAllQueuesTask()
-        {
-            Stopwatch sw = Stopwatch.StartNew();
-
-            var listTasks = new List<Task<IReliableQueue<PopReceipt>>>();
-
-            for (int i = 0; i < _queueNames.Length; i++)
-            {
-                int ii = i;
-
-                Task<IReliableQueue<PopReceipt>> task = Task.Run(
-                    (async () =>
-                        {
-                            return await GetQueueAsync(ii).ConfigureAwait(false);
-                        }
-                    )
-                );
-
-                listTasks.Add(task);
-            }                
-
-            return listTasks;
-
         }
 
         /// <summary>
